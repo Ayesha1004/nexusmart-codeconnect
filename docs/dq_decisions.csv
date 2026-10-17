@@ -1,0 +1,12 @@
+file,finding,treatment,rationale
+orders/payments,Exact identical records,Drop later identical copy; export reject row,All rate denominators use exact-deduplicated orders; repeat payment IDs are checked separately
+orders,Order dates outside window or unparseable,Quarantine pending verified source correction,Never infer a date solely from adjacent order IDs
+customers/sellers,Malformed registration or join dates,"Null parsed date, keep row; retain flagged source",Rejecting parent entities would create artificial foreign-key orphans
+orders,Unknown customer or shipping city,Unknown dimension member (distinct from actual customer city),Preserves order counts and revenue; keep original FK and emit a modeled Unknown key downstream
+order_items,Missing product dimension,Unknown product member; preserve financial line,Do not lose sales by dropping financial facts
+returns,Unknown order item FK,"Quarantine from return-rate numerator, export for review",Cannot attribute a return to a qualifying sold line
+returns,Declined status,Rejected,Do not include rejected returns in return-rate numerator
+shipping,Shipped vs In Transit,Keep distinct,In Transit counts toward NMV eligibility only if order-level business definition includes it; never mark delivered
+order_items,Null discounts,Zero only if code missing; compute gross × verified code rate otherwise,Unrecognized codes remain unresolved and require approved mapping
+customers/products,Near-duplicate entities,"Investigate matched IDs, keep originals until crosswalk approved",Missing keys do not count as evidence of equality; never rely on brand alone
+payments,Multiple payment attempts or methods per order,Use final successful captured payment if determinable; otherwise Unknown and review,Do not arbitrarily choose first payment_id or sum duplicate attempts

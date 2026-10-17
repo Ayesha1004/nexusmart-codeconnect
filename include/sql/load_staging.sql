@@ -1,0 +1,9 @@
+\copy stg_locations   from '/tmp/processed/locations.csv'   csv header
+\copy stg_sellers     from '/tmp/processed/sellers.csv'     csv header
+\copy stg_products    from '/tmp/processed/products.csv'    csv header
+\copy stg_customers   from '/tmp/processed/customers.csv'   csv header
+\copy stg_orders      from '/tmp/processed/orders.csv'      csv header
+\copy stg_order_items from '/tmp/processed/order_items.csv' csv header
+\copy stg_payments    from '/tmp/processed/payments.csv'    csv header
+\copy stg_shipping    from '/tmp/processed/shipping.csv'    csv header
+\copy stg_returns     from '/tmp/processed/returns.csv'     csv header

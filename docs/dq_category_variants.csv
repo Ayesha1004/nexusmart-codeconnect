@@ -1,0 +1,64 @@
+file,column,normalized,variants,variant_count
+customers,gender,f,F | f,2
+customers,gender,female,female | Female,2
+customers,gender,m,m | M,2
+customers,gender,male,Male | male,2
+locations,province,balochistan,Balochistan | BALOCHISTAN,2
+locations,province,khyber pakhtunkhwa,Khyber Pakhtunkhwa | Khyber Pakhtunkhwa ,2
+locations,province,punjab,Punjab | punjab | PUNJAB,3
+locations,province,sindh,Sindh | sindh | SINDH,3
+orders,order_status,cancelled,Cancelled | cancelled | Cancelled  | CANCELLED,4
+orders,order_status,delivered,Delivered | DELIVERED | delivered,3
+orders,order_status,in transit,In Transit | IN TRANSIT | in transit,3
+orders,order_status,returned,RETURNED | Returned | returned,3
+orders,discount_code,save10,SAVE10 |  SAVE10 | Save10 | save10,4
+orders,discount_code,save15,SAVE15 |  SAVE15 | save15 | Save15,4
+orders,discount_code,save20,SAVE20 |  SAVE20 | Save20 | save20,4
+orders,discount_code,save25,SAVE25 |  SAVE25 | Save25 | save25,4
+orders,discount_code,save30,SAVE30 |  SAVE30 | save30 | Save30,4
+orders,discount_code,save40,SAVE40 | Save40 |  SAVE40 | save40,4
+orders,discount_code,save5,SAVE5 | Save5 | save5 |  SAVE5,4
+orders,discount_code,save50,SAVE50 | Save50 | save50 |  SAVE50,4
+orders,channel,app,App | APP | app,3
+orders,channel,mobile web,Mobile Web | Mobile web | mobile web,3
+orders,channel,web,Web | web | WEB,3
+payments,payment_method,bank transfer,bank transfer | Bank Transfer | BANK TRANSFER,3
+payments,payment_method,card,Card | CARD | card,3
+payments,payment_method,cash on delivery,Cash On Delivery | Cash on Delivery,2
+payments,payment_method,cod,COD | cod | COD ,3
+payments,payment_method,easypaisa,EasyPaisa | EASYPAISA | Easypaisa,3
+payments,payment_method,jazzcash,JazzCash | Jazzcash | JAZZCASH,3
+payments,payment_status,cancelled,Cancelled | CANCELLED | cancelled | Cancelled ,4
+payments,payment_status,paid,Paid | paid | PAID,3
+payments,payment_status,pending,Pending | PENDING | pending,3
+payments,payment_status,refunded,REFUNDED | Refunded | refunded,3
+products,category,automotive,Automotive | Automotive  | automotive | AUTOMOTIVE ,4
+products,category,beauty & personal care,Beauty & Personal Care | beauty & personal care | BEAUTY & PERSONAL CARE  | Beauty & Personal Care ,4
+products,category,books & stationery,books & stationery | Books & Stationery | Books & Stationery  | BOOKS & STATIONERY ,4
+products,category,electronics,Electronics | Electronics  | electronics | ELECTRONICS ,4
+products,category,fashion,Fashion | FASHION  | Fashion  | fashion,4
+products,category,footwear,Footwear | FOOTWEAR  | footwear | Footwear ,4
+products,category,grocery,Grocery | GROCERY  | grocery | Grocery ,4
+products,category,health & wellness,HEALTH & WELLNESS  | Health & Wellness  | Health & Wellness | health & wellness,4
+products,category,home & kitchen,Home & Kitchen  | Home & Kitchen | HOME & KITCHEN  | home & kitchen,4
+products,category,mobile & accessories,Mobile & Accessories | MOBILE & ACCESSORIES  | mobile & accessories | Mobile & Accessories ,4
+products,category,sports & outdoors,sports & outdoors | Sports & Outdoors | SPORTS & OUTDOORS  | Sports & Outdoors ,4
+products,category,toys & games,Toys & Games | Toys & Games  | TOYS & GAMES  | toys & games,4
+returns,return_reason,damaged product,Damaged product | DAMAGED PRODUCT,2
+returns,return_reason,not as described,Not as described | not as described | Not as Described,3
+returns,return_reason,wrong item,Wrong Item | wrong item,2
+returns,return_status,approved,Approved | approved | APPROVED,3
+returns,return_status,refunded,Refunded | REFUNDED | refunded,3
+returns,return_status,rejected,Rejected | rejected,2
+sellers,seller_tier,bronze,Bronze | bronze | BRONZE,3
+sellers,seller_tier,gold,Gold | gold | Gold ,3
+sellers,seller_tier,silver,Silver | silver | SILVER | Silver ,4
+shipping,courier,blueex,BlueEx | blueex,2
+shipping,courier,leopards,Leopards | LEOPARDS | leopards,3
+shipping,courier,m&p,M&P | m&p,2
+shipping,courier,postex,POSTEX | PostEx | Postex,3
+shipping,courier,tcs,TCS | tcs,2
+shipping,courier,trax,Trax | TRAX | trax,3
+shipping,delivery_status,delivered,Delivered | delivered | DELIVERED,3
+shipping,delivery_status,in transit,In Transit | IN TRANSIT | in transit,3
+shipping,delivery_status,returned to seller,returned to seller | Returned to Seller,2
