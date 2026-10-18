@@ -1,0 +1,136 @@
+NEXUSMART - COMMANDS TO RUN EVERYTHING (Windows PowerShell)
+============================================================
+Run all commands from the project folder:
+    cd C:\Users\Syscom\Desktop\nexusmart-codeconnect
+
+Items marked (CHECK) depend on your docker-compose.yml. Adjust them if your names differ.
+
+
+0. ONE-TIME SETUP
+-----------------
+# Python environment (conda environment named nexusmart)
+conda activate nexusmart
+pip install pandas numpy sqlalchemy psycopg2-binary jupyter
+
+# Folder layout the project expects
+#   data\raw\          <- the 9 original CSVs (customers, products, sellers, locations,
+#                         orders, order_items, payments, shipping, returns)
+#   data\processed\    <- created by the cleaning step
+#   include\clean\     <- cleaning package (new version from nexusmart_cleaning.zip)
+#   include\sql\       <- 00_reset.sql, 01_schema.sql, 02_dimensions.sql, 03_fact_sales.sql,
+#                         load_staging.sql, verify_star_v2.sql
+#   dags\              <- nexusmart_pipeline_all_tasks.py
+
+
+1. START DOCKER SERVICES
+------------------------
+docker compose up -d
+docker compose ps                      # all services should be running / healthy
+docker compose logs -f warehouse       # Ctrl+C to leave the log view
+
+# If the Airflow image needs pandas / extra packages (CHECK):
+docker compose build
+docker compose up -d
+
+
+2. CREATE THE TABLES (first time only, or after "docker compose down -v")
+------------------------------------------------------------------------
+docker compose cp include/sql/. warehouse:/tmp/sql
+docker compose exec warehouse psql -U nexus -d nexusmart -f /tmp/sql/01_schema.sql
+
+# Check that tables exist
+docker compose exec warehouse psql -U nexus -d nexusmart -c "\dt"
+
+
+3. OPTION A - RUN THE WHOLE PIPELINE WITH AIRFLOW
+-------------------------------------------------
+# Open the Airflow UI (CHECK the port in docker-compose.yml, usually 8080)
+#   http://localhost:8080
+# Turn the DAG "nexusmart_pipeline" on and press Trigger.
+# Task order: extract > validate_raw > clean > reset_database > load_staging_task
+#             > build_dimensions > build_fact > quality_checks
+
+# Or trigger from the command line (CHECK the Airflow service name, e.g. airflow-apiserver):
+docker compose exec airflow-apiserver airflow dags trigger nexusmart_pipeline
+
+# If a task fails, open its log in the Airflow UI and read the last error lines.
+
+
+4. OPTION B - RUN EACH STEP BY HAND
+-----------------------------------
+# 4a. Clean (in the notebook 02_run_cleaning.ipynb, or in Python):
+#     python -c "import sys; sys.path.append('include'); from clean import run_all; run_all('data/raw','data/processed')"
+
+# 4b. Copy the cleaned files and the SQL into the warehouse container
+docker compose cp data/processed/. warehouse:/tmp/processed
+docker compose cp include/sql/. warehouse:/tmp/sql
+
+# 4c. Reset, load, build, verify
+docker compose exec warehouse psql -U nexus -d nexusmart -f /tmp/sql/00_reset.sql
+docker compose exec warehouse psql -U nexus -d nexusmart -f /tmp/sql/load_staging.sql
+docker compose exec warehouse psql -U nexus -d nexusmart -f /tmp/sql/02_dimensions.sql
+docker compose exec warehouse psql -U nexus -d nexusmart -f /tmp/sql/03_fact_sales.sql
+docker compose exec warehouse psql -U nexus -d nexusmart -f /tmp/sql/verify_star_v2.sql
+
+# Expected: checks 1-10 PASS. Checks 11-17 are REVIEW items (known gaps).
+
+
+5. QUICK CHECKS
+---------------
+# Row counts
+@'
+SELECT 'FactSales' AS tbl, COUNT(*) FROM "FactSales"
+UNION ALL SELECT 'DimCustomer', COUNT(*) FROM "DimCustomer"
+UNION ALL SELECT 'DimProduct', COUNT(*) FROM "DimProduct"
+UNION ALL SELECT 'DimSeller', COUNT(*) FROM "DimSeller"
+UNION ALL SELECT 'DimLocation', COUNT(*) FROM "DimLocation"
+UNION ALL SELECT 'DimDate', COUNT(*) FROM "DimDate";
+'@ | docker compose exec -T warehouse psql -U nexus -d nexusmart
+
+# Headline totals for the reconciliation table
+@'
+SELECT COUNT(DISTINCT "OrderID") AS orders,
+       SUM("NetAmount") AS net_revenue,
+       SUM("ReturnedAmount") AS refunds,
+       SUM("ShippingFee") AS shipping_fees
+FROM "FactSales";
+'@ | docker compose exec -T warehouse psql -U nexus -d nexusmart
+
+
+6. EXPORT TABLES FOR POWER BI (for teammates without Docker)
+------------------------------------------------------------
+docker compose exec warehouse mkdir -p /tmp/export
+@'
+\copy "FactSales" to '/tmp/export/FactSales.csv' csv header
+\copy "DimDate" to '/tmp/export/DimDate.csv' csv header
+\copy "DimCustomer" to '/tmp/export/DimCustomer.csv' csv header
+\copy "DimProduct" to '/tmp/export/DimProduct.csv' csv header
+\copy "DimSeller" to '/tmp/export/DimSeller.csv' csv header
+\copy "DimLocation" to '/tmp/export/DimLocation.csv' csv header
+'@ | docker compose exec -T warehouse psql -U nexus -d nexusmart
+docker compose cp warehouse:/tmp/export ./data/export
+
+# In Power BI: Get Data > Text/CSV for each file. Replace t/f with true/false in the
+# boolean columns (IsCancelled, IsReturned, DimDate flags) in Power Query.
+# Power BI direct connection to Postgres: host localhost, port 5433, db nexusmart, user nexus.
+
+# After every pipeline re-run: export again (if using CSVs), then click Refresh in Power BI.
+
+
+7. STOP / RESET
+---------------
+docker compose stop                    # stop, keep data
+docker compose down                    # remove containers, keep database volume
+docker compose down -v                 # remove containers AND database data (then repeat step 2)
+
+
+8. COMMON PROBLEMS
+------------------
+- "Not a conda environment": use  conda activate nexusmart  (environment name, not the env folder).
+- "relation does not exist": the tables are missing, run step 2.
+- cp creates /tmp/processed/processed: always copy with a trailing dot,  data/processed/.
+- Check 17 still 3641: the warehouse still holds old CSVs. Re-run cleaning on data\raw,
+  copy with the trailing-dot command, then reset and reload.
+- Notebook still using old code: restart the kernel, then run the setup cell again.
+- Airflow task "Unsupported staging command": load_staging.sql lines must look exactly like
+  \copy stg_orders from '/tmp/processed/orders.csv' csv header   (one per line).

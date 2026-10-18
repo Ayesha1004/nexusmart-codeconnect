@@ -73,23 +73,24 @@ def nexusmart_pipeline():
         from sqlalchemy import create_engine
 
         warehouse_url = os.environ["WAREHOUSE_URL"]
-        sql_path = Path("/opt/airflow/include/sql/00_reset.sql")
+        sql_dir = INCLUDE_DIR / "sql"
+        scripts = [sql_dir / "01_schema.sql", sql_dir / "00_reset.sql"]
 
-        if not sql_path.is_file():
-            raise FileNotFoundError(f"Reset SQL not found: {sql_path}")
-
-        reset_sql = sql_path.read_text(encoding="utf-8")
+        for sql_path in scripts:
+            if not sql_path.is_file():
+                raise FileNotFoundError(f"SQL not found: {sql_path}")
 
         engine = create_engine(warehouse_url)
-
         try:
             connection = engine.raw_connection()
             try:
                 cursor = connection.cursor()
                 try:
-                    cursor.execute(reset_sql)
+                    for sql_path in scripts:
+                        cursor.execute(sql_path.read_text(encoding="utf-8-sig"))
+                        log.info("Executed %s", sql_path.name)
                     connection.commit()
-                    log.info("NexusMart warehouse reset completed")
+                    log.info("NexusMart warehouse schema ensured and reset completed")
                 except Exception:
                     connection.rollback()
                     raise
