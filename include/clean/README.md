@@ -46,12 +46,23 @@ Outputs in the processed folder: cleaned CSVs, `rejects.csv`, `customer_map.csv`
 7. Line discount is replaced by the order's SAVE<n> percentage when they disagree.
 8. Bad order date: repaired from primary payment date, then shipped date; otherwise rejected.
 9. birth_year valid range 1930-2010, else null.
-10. Quantity <= 0 is rejected (INVALID_QUANTITY).
-11. Missing shipping_fee is flagged (`shipping_fee_missing`), not filled.
+10. Quantity zero or not a whole number is rejected (INVALID_QUANTITY); words and negatives are repaired (see 18).
+11. Missing shipping_fee is flagged (`shipping_fee_missing`) and filled with a typical fee (see 20).
 12. Duplicate payments: keep best by payment_rank Paid > Refunded > Pending > Cancelled, then latest date.
 13. Orphan customer/product/seller -> `UNKNOWN` member (revenue kept); orphan order lines/returns -> rejected.
 14. Unmapped return status counts as NOT a valid return.
 15. A return dated before its order has its return_date nulled.
+
+## Added after the first run on the real data (all checked against order totals)
+16. `9,999,999` is a placeholder in unit_price, discount, shipping_fee, order_total, payment amount and list_price -> treated as missing.
+17. Unit price repairs, using the product list price as reference (normal lines sell at 0.9-1.1x list):
+    ratio ~100 -> divide by 100; ratio ~0.0036 (US dollars) -> multiply by 280; anything else implausible -> use the list price.
+    If the list price itself was a placeholder, the median price of that product's other lines is the reference.
+    Unknown-product lines can only be corrected when extreme (price > 70,000 or < 50).
+18. Quantity: words ('two') -> number; negative -> positive (97% of these match the order total); the placeholder 500 -> solved from the order total (1 if it cannot be solved).
+19. order_total: negative -> sign fixed, 0 and 9,999,999 -> missing. It is only a reconciliation check, never used for revenue.
+20. Missing/invalid shipping fees (9,477) are filled with the typical fee for an order of that value; `shipping_fee_missing` stays True on those rows.
+21. Result on the real data: 99.4% of orders match their order_total (the rest differ by a median of 44 PKR).
 
 ## Known limits
 Tested only on synthetic data (tests/make_sample_data.py). Run it on the real files and read `clean_stats.csv`

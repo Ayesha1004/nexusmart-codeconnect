@@ -6,7 +6,8 @@ Order of steps (each logs a row to the run stats):
   2. broken references -> Unknown member (kept, revenue is preserved) or quarantine (cannot be linked)
   3. repair order dates from payments / shipping, quarantine what is left
   4. cascade: children of removed orders are quarantined
-  5. order_items: repair price from the product list price, reconcile discount with the order's code
+  5. order_items: repair price (x100 / US-dollar / placeholder), recover placeholder quantities from the
+     order total, reconcile discount with the order's code; fill missing shipping fees
   6. returns: orphan lines quarantined, impossible return dates nulled
   7. reconciliation check: order_total vs sum of its lines (logged, not changed)
 
@@ -16,6 +17,9 @@ reference to Unknown; if the record cannot be attributed at all, quarantine it w
 from __future__ import annotations
 
 import pandas as pd
+
+USD_TO_PKR = 280   # DECISION: implied by 44 single-line orders with dollar prices (median 279.9)
+PRICE_MIN, PRICE_MAX = 50, 70_000   # real list prices run 100-62,530; lines sell at 0.9-1.1x list
 
 from .common import (UNKNOWN_ID, WINDOW_END, WINDOW_START, log_step, make_rejects)
 
@@ -92,14 +96,64 @@ def apply_integrity(data: dict, id_maps: dict):
     ship = reject(ship, ~ship["order_id"].isin(valid_orders), "shipping", "ORPHAN_ORDER",
                   "order missing or quarantined")
 
-    # ---- 5. order_items: price repair, discount reconciliation
+    # ---- 5. order_items: price repair, quantity repair, discount reconciliation
+    # In the real data a normal line is priced at 0.9-1.1 x the product's list price. Three kinds of
+    # corruption were found by comparing with the list price AND confirmed against the order totals:
+    #   price x100            (ratio ~100)   -> divide by 100            (54 of 56 single-line orders reconcile)
+    #   price in US dollars   (ratio ~0.0036)-> multiply by 280 PKR/USD  (implied rate 279.9, very tight)
+    #   9,999,999 placeholder / anything else implausible -> take the product's list price
     list_price = prod.set_index("product_id")["list_price"]
+    # Reference price per line = the product's list price. If the list price itself was a placeholder
+    # (null after cleaning), use the median of that product's other plausible line prices instead.
+    plausible = items["unit_price"].between(PRICE_MIN, PRICE_MAX)
+    line_median = items[plausible & (items["product_id"] != UNKNOWN_ID)].groupby("product_id")["unit_price"].median()
+    ref = items["product_id"].map(list_price).fillna(items["product_id"].map(line_median))
+
+    ratio = items["unit_price"] / ref
+    x100 = ratio.between(50, 200).fillna(False)
+    usd = ratio.between(0.001, 0.01).fillna(False)
+    # No reference at all (Unknown product): only extreme values can be recognised, using the real
+    # price range (list prices run 100-62,530).
+    no_ref = ref.isna() & items["unit_price"].notna()
+    x100 |= no_ref & (items["unit_price"] > PRICE_MAX) & (items["unit_price"] / 100).between(PRICE_MIN, PRICE_MAX)
+    usd |= no_ref & (items["unit_price"] < PRICE_MIN) & (items["unit_price"] * USD_TO_PKR).between(PRICE_MIN, PRICE_MAX)
+    items.loc[x100, "unit_price"] = items.loc[x100, "unit_price"] / 100
+    items.loc[usd, "unit_price"] = (items.loc[usd, "unit_price"] * USD_TO_PKR).round()
+    note("order_items.unit_price_x100_divided", x100.sum())
+    note("order_items.unit_price_usd_converted_to_pkr", usd.sum())
+    ratio = items["unit_price"] / ref
+    implausible = ((ratio < 0.5) | (ratio > 2)).fillna(False)
+    implausible |= ref.isna() & ~items["unit_price"].between(PRICE_MIN, PRICE_MAX) & items["unit_price"].notna()
+    items.loc[implausible, "unit_price"] = float("nan")
+    note("order_items.unit_price_implausible_set_for_repair", implausible.sum())
+
     need = items["unit_price"].isna()
-    fixed = items.loc[need, "product_id"].map(list_price)
+    fixed = ref[need]
     items.loc[need, "unit_price"] = fixed
     note("order_items.unit_price_repaired_from_list_price", fixed.notna().sum())
     items = reject(items, items["unit_price"].isna(), "order_items", "INVALID_PRICE",
-                   "unit_price missing/<=0 and no product list price to repair from")
+                   "unit_price missing/placeholder and no product list price to repair from")
+
+    # quantity placeholder (500): the order total is the only place the true quantity still exists.
+    #   total = (sum of other lines' gross + qty * price) * (1 - discount%)  ->  solve for qty
+    # Accepted only if the answer is a whole number 1-10; otherwise 1 (the most common quantity).
+    order_info = orders.set_index("order_id")
+    ph = items["_qty_placeholder"].fillna(False).astype(bool)
+    pct_o = items["order_id"].map(order_info["discount_pct"]).fillna(0)
+    ot = items["order_id"].map(order_info["order_total"])
+    gross_known = (items["quantity"].astype("float64") * items["unit_price"]).where(~ph)
+    other_gross = gross_known.groupby(items["order_id"]).transform("sum")
+    n_ph = ph.groupby(items["order_id"]).transform("sum")
+    implied = (ot / (1 - pct_o / 100) - other_gross) / items["unit_price"]
+    q = implied.round()
+    solved = ph & (n_ph == 1) & ot.notna() & q.between(1, 10) & ((implied - q).abs() <= 0.15)
+    items.loc[solved, "quantity"] = q[solved].astype("Int64")
+    fallback = ph & ~solved
+    items.loc[fallback, "quantity"] = 1                         # DECISION: unknown quantity -> 1
+    note("order_items.quantity_placeholder_solved_from_order_total", solved.sum())
+    note("order_items.quantity_placeholder_set_to_1", fallback.sum())
+    items["quantity"] = items["quantity"].astype("Int64")
+    items = items.drop(columns="_qty_placeholder")
 
     gross = items["quantity"].astype(float) * items["unit_price"]
     pct = items["order_id"].map(orders.set_index("order_id")["discount_pct"]).fillna(0)
@@ -112,6 +166,21 @@ def apply_integrity(data: dict, id_maps: dict):
     note("order_items.discount_missing_recomputed", missing.sum())
     note("order_items.discount_above_gross_recomputed", (over & ~missing).sum())
     note("order_items.discount_mismatch_recomputed", (off & ~missing & ~over).sum())
+
+    # shipping fee: missing/invalid fees get the typical fee for an order of the same value
+    # (real data: median fee rises from ~258 to ~944 with order size; courier makes no difference).
+    line_net = items["quantity"].astype(float) * items["unit_price"] - items["discount_amount"]
+    order_net = line_net.groupby(items["order_id"]).sum()
+    ship_net = ship["order_id"].map(order_net)
+    have = ship["shipping_fee"].notna() & ship_net.notna()
+    edges = pd.qcut(ship_net[have], 10, duplicates="drop", retbins=True)[1]
+    edges[0], edges[-1] = -float("inf"), float("inf")
+    bucket = pd.cut(ship_net, edges).astype(object)
+    typical = ship.loc[have, "shipping_fee"].groupby(bucket[have]).median().to_dict()
+    missing_fee = ship["shipping_fee"].isna()
+    fill = bucket.map(typical).astype(float).fillna(ship["shipping_fee"].median())
+    ship.loc[missing_fee, "shipping_fee"] = fill[missing_fee].round()
+    note("shipping.fee_filled_with_typical_fee_for_order_size", missing_fee.sum())   # flag column stays True
 
     # ---- 6. returns
     known_items = set(items["order_item_id"])

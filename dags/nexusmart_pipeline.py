@@ -1,8 +1,4 @@
-"""Nexusmart: raw-file checks and nine-file cleaning pipeline.
-
-The staging/database tasks from the skeleton are intentionally not included
-until their implementations are available.
-"""
+"""NexusMart end-to-end Airflow pipeline: CSVs to PostgreSQL star schema."""
 import csv
 import logging
 import os
@@ -170,8 +166,147 @@ def nexusmart_pipeline():
         finally:
             conn.close()
 
-    # Define every task before constructing its dependency chain.
-    extract() >> validate_raw() >> clean() >> reset_database() >> load_staging_task()
+    @task
+    def build_dimensions():
+        """Populate the five dimensions after staging has been loaded."""
+        import psycopg2
+        from sqlalchemy.engine import make_url
+
+        sql_path = INCLUDE_DIR / "sql" / "02_dimensions.sql"
+        if not sql_path.is_file():
+            raise FileNotFoundError(f"Missing dimension SQL: {sql_path}")
+
+        script = sql_path.read_text(encoding="utf-8-sig")
+        url = make_url(os.environ["WAREHOUSE_URL"])
+        conn = psycopg2.connect(
+            host=url.host, port=url.port or 5432, dbname=url.database,
+            user=url.username, password=url.password,
+        )
+        try:
+            with conn.cursor() as cur:
+                cur.execute(script)
+            conn.commit()
+            log.info("Dimension SQL executed successfully: %s", sql_path.name)
+            with conn.cursor() as cur:
+                for table in ("DimDate", "DimCustomer", "DimProduct", "DimSeller", "DimLocation"):
+                    cur.execute(f'SELECT COUNT(*) FROM "{table}"')
+                    log.info("%s contains %s rows", table, cur.fetchone()[0])
+        except Exception:
+            conn.rollback()
+            log.exception("Dimension SQL failed; see PostgreSQL error above")
+            raise
+        finally:
+            conn.close()
+
+    @task
+    def build_fact():
+        """Populate FactSales using the reviewed include/sql/03_fact_sales.sql."""
+        import psycopg2
+        from sqlalchemy.engine import make_url
+
+        sql_path = INCLUDE_DIR / "sql" / "03_fact_sales.sql"
+        if not sql_path.is_file():
+            raise FileNotFoundError(f"Missing fact SQL: {sql_path}")
+        script = sql_path.read_text(encoding="utf-8-sig")
+        url = make_url(os.environ["WAREHOUSE_URL"])
+        conn = psycopg2.connect(
+            host=url.host, port=url.port or 5432, dbname=url.database,
+            user=url.username, password=url.password,
+        )
+        try:
+            with conn.cursor() as cur:
+                cur.execute(script)
+            conn.commit()
+            with conn.cursor() as cur:
+                cur.execute('SELECT COUNT(*) FROM "FactSales"')
+                count = cur.fetchone()[0]
+            log.info("FactSales built with %s records", count)
+        except Exception:
+            conn.rollback()
+            log.exception("Fact build failed; check 03_fact_sales.sql")
+            raise
+        finally:
+            conn.close()
+
+    @task
+    def quality_checks():
+        """Fail the run on broken warehouse integrity and shipping allocations."""
+        import psycopg2
+        from sqlalchemy.engine import make_url
+
+        url = make_url(os.environ["WAREHOUSE_URL"])
+        conn = psycopg2.connect(
+            host=url.host, port=url.port or 5432, dbname=url.database,
+            user=url.username, password=url.password,
+        )
+        checks = {
+            "no_fact_rows": 'SELECT CASE WHEN COUNT(*) = 0 THEN 1 ELSE 0 END FROM "FactSales"',
+            "fact_vs_staging_row_difference":
+                'SELECT ABS((SELECT COUNT(*) FROM "FactSales") - (SELECT COUNT(*) FROM stg_order_items))',
+            "duplicate_fact_order_item_ids":
+                'SELECT COUNT(*) - COUNT(DISTINCT "OrderItemID") FROM "FactSales"',
+            "null_fact_required_fields":
+                'SELECT COUNT(*) FROM "FactSales" WHERE "OrderItemID" IS NULL OR "OrderID" IS NULL '
+                'OR "DateKey" IS NULL OR "CustomerKey" IS NULL OR "ProductKey" IS NULL '
+                'OR "SellerKey" IS NULL OR "LocationKey" IS NULL',
+            "missing_customer_dimension":
+                'SELECT COUNT(*) FROM "FactSales" f LEFT JOIN "DimCustomer" d '
+                'ON f."CustomerKey"=d."CustomerKey" WHERE d."CustomerKey" IS NULL',
+            "missing_product_dimension":
+                'SELECT COUNT(*) FROM "FactSales" f LEFT JOIN "DimProduct" d '
+                'ON f."ProductKey"=d."ProductKey" WHERE d."ProductKey" IS NULL',
+            "missing_seller_dimension":
+                'SELECT COUNT(*) FROM "FactSales" f LEFT JOIN "DimSeller" d '
+                'ON f."SellerKey"=d."SellerKey" WHERE d."SellerKey" IS NULL',
+            "missing_location_dimension":
+                'SELECT COUNT(*) FROM "FactSales" f LEFT JOIN "DimLocation" d '
+                'ON f."LocationKey"=d."LocationKey" WHERE d."LocationKey" IS NULL',
+            "missing_order_date_dimension":
+                'SELECT COUNT(*) FROM "FactSales" f LEFT JOIN "DimDate" d '
+                'ON f."DateKey"=d."DateKey" WHERE d."DateKey" IS NULL',
+            "missing_return_date_dimension":
+                'SELECT COUNT(*) FROM "FactSales" f LEFT JOIN "DimDate" d '
+                'ON f."ReturnDateKey"=d."DateKey" '
+                'WHERE f."ReturnDateKey" IS NOT NULL AND d."DateKey" IS NULL',
+            "shipping_fee_mismatch_orders": """
+                WITH expected AS (
+                    SELECT order_id,
+                        MAX(COALESCE(NULLIF(shipping_fee,'')::numeric,0)) AS fee
+                    FROM stg_shipping GROUP BY order_id
+                ), actual AS (
+                    SELECT "OrderID" AS order_id,
+                        SUM(COALESCE("ShippingFee",0)) AS fee
+                    FROM "FactSales" GROUP BY "OrderID"
+                )
+                SELECT COUNT(*) FROM actual a LEFT JOIN expected e USING(order_id)
+                WHERE ABS(a.fee-COALESCE(e.fee,0)) > 0.005
+            """,
+        }
+        errors = {}
+        try:
+            with conn.cursor() as cur:
+                for table in ("DimDate", "DimCustomer", "DimProduct", "DimSeller", "DimLocation"):
+                    cur.execute(f'SELECT COUNT(*) FROM "{table}"')
+                    count = cur.fetchone()[0]
+                    log.info("%s rows: %s", table, count)
+                    if count == 0:
+                        errors[f"empty_{table}"] = count
+                for name, query in checks.items():
+                    cur.execute(query)
+                    count = int(cur.fetchone()[0])
+                    log.info("Quality check %s: %d", name, count)
+                    if count != 0:
+                        errors[name] = count
+            if errors:
+                from airflow.exceptions import AirflowFailException
+                raise AirflowFailException(f"Warehouse quality checks failed: {errors}")
+            log.info("All warehouse quality checks passed")
+        finally:
+            conn.close()
+
+    # A single linear dependency chain; tasks are defined above it.
+    (extract() >> validate_raw() >> clean() >> reset_database()
+     >> load_staging_task() >> build_dimensions() >> build_fact() >> quality_checks())
 
 
 nexusmart_pipeline()

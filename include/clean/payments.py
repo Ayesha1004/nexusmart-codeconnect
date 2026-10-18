@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import pandas as pd
 
-from .common import Tracker, parse_dates, standardize, to_number
+from .common import Tracker, parse_dates, standardize, to_number, null_sentinel
 from .mappings import PAYMENT_METHOD, PAYMENT_STATUS
 
 # DECISION: which payment represents the order? Paid first, then refunded, pending, cancelled;
@@ -28,6 +28,8 @@ def clean_payments(df: pd.DataFrame):
     t.repaired("payment_status_unmapped", unmapped.sum())
     df["amount"], bad = to_number(df["amount"])
     t.repaired("amount_unparseable", bad.sum())
+    df["amount"], placeholder = null_sentinel(df["amount"])
+    t.repaired("amount_placeholder_9999999_set_null", placeholder.sum())
 
     # payment_date may legitimately fall just after the order window; only impossible dates are errors
     dates, bad = parse_dates(df["payment_date"])

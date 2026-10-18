@@ -11,7 +11,7 @@ from __future__ import annotations
 
 import pandas as pd
 
-from .common import (ID_MAPS, Tracker, UNKNOWN, UnionFind, norm_key, standardize, to_number)
+from .common import (ID_MAPS, Tracker, UNKNOWN, UnionFind, norm_key, standardize, to_number, null_sentinel)
 from .mappings import CATEGORY
 
 PRICE_TOLERANCE = 0.05      # DECISION: 5%. The profiled pairs differ by 0.4% to 3%.
@@ -52,6 +52,9 @@ def clean_products(df: pd.DataFrame):
     list_price, bad_lp = to_number(df["list_price"])
     cost, bad_cp = to_number(df["cost_price"])
     weight, _ = to_number(df["weight_kg"])
+    list_price, placeholder_lp = null_sentinel(list_price)
+    t.repaired("list_price_placeholder_9999999", placeholder_lp.sum())
+    cost, _ = null_sentinel(cost)
     list_price = list_price.where(list_price > 0)
     t.repaired("list_price_invalid_set_null", (list_price.isna() & df["list_price"].notna()).sum())
     weight_bad = weight <= 0                                 # seen -1.00

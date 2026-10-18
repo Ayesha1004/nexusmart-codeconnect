@@ -9,7 +9,8 @@ from __future__ import annotations
 
 import pandas as pd
 
-from .common import WINDOW_END, WINDOW_START, Tracker, parse_dates, standardize, to_int, to_number
+from .common import (WINDOW_END, WINDOW_START, Tracker, null_sentinel, parse_dates, standardize, to_int,
+                     to_number)
 from .mappings import CHANNEL, ORDER_STATUS
 
 
@@ -48,5 +49,12 @@ def clean_orders(df: pd.DataFrame):
 
     total, bad_total = to_number(df["order_total"])
     t.repaired("order_total_unparseable", bad_total.sum())
-    df["order_total"] = total                      # used for a reconciliation check, not for revenue
+    total, placeholder_total = null_sentinel(total)
+    t.repaired("order_total_placeholder_9999999_set_null", placeholder_total.sum())
+    negative = (total < 0).fillna(False)
+    t.repaired("order_total_negative_sign_fixed", negative.sum())   # 166 of 167 equal the sum of their lines
+    total = total.where(~negative, total.abs())
+    zero = (total == 0).fillna(False)
+    t.repaired("order_total_zero_set_null", zero.sum())
+    df["order_total"] = total.where(~zero)         # used for a reconciliation check, not for revenue
     return t.finish(df)

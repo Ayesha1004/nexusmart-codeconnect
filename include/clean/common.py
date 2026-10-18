@@ -58,6 +58,29 @@ def to_number(s: pd.Series):
     return out, bad
 
 
+SENTINEL = 9_999_999   # the source writes 9,999,999 as a placeholder in several numeric columns
+
+
+def null_sentinel(s: pd.Series):
+    """9,999,999 is a placeholder for 'unknown', not an amount. -> (values with NaN, mask of placeholders)."""
+    hit = (s >= SENTINEL).fillna(False)
+    return s.where(~hit), hit
+
+
+QTY_WORDS = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5,
+             "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10}
+
+
+def parse_quantity(s: pd.Series):
+    """'two' -> 2, '-3' -> 3, 'Rs'-style text stripped. Returns (quantity, was_word, was_negative)."""
+    words = s.str.strip().str.lower().map(QTY_WORDS)
+    is_word = words.notna()
+    num, _ = to_number(s.where(~is_word))
+    was_negative = (num < 0).fillna(False)
+    qty = words.astype("float64").where(is_word, num.abs())
+    return qty, is_word, was_negative
+
+
 DATE_FORMATS = ("%Y-%m-%d", "%d/%m/%Y", "%b %d %Y")  # slash dates are day/month/year (brief)
 
 

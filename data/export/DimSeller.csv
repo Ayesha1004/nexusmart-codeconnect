@@ -1,0 +1,422 @@
+SellerKey,SellerID,SellerName,JoinDate,SellerTier,Rating,CityID,City,Province,Region
+-1,UNKNOWN,Unknown,,,,,,,
+1681,S0001,Karachi Traders 84,2023-07-17,Gold,4.10,597,Gujranwala,Punjab,Central
+1682,S0002,Crown Collection 32,2020-02-14,Silver,4.10,86,Peshawar,Khyber Pakhtunkhwa,North
+1683,S0003,Metro Mart 5,2022-10-16,Bronze,3.90,450,Lahore,Punjab,Central
+1684,S0004,Karachi Brothers 38,2019-12-31,Bronze,4.30,597,Gujranwala,Punjab,Central
+1685,S0005,Metro Traders 88,,Bronze,,614,Karachi,Sindh,South
+1686,S0006,zam zam enterprises 55,2022-06-15,Silver,3.70,384,ShahMianAbad,Sindh,South
+1687,S0007,Al-Noor Hub 57,,Silver,4.30,450,Lahore,Punjab,Central
+1688,S0008,prime solutions 4,2022-04-04,Silver,4.00,548,Mardan,Khyber Pakhtunkhwa,North
+1689,S0009,Karachi Mart 24,2021-04-21,Bronze,4.40,502,KhurdChak,Khyber Pakhtunkhwa,North
+1690,S0010,Golden Bazaar 24,2021-01-02,Bronze,3.90,601,Multan,Punjab,Central
+1691,S0011,smart hub 32,2021-02-04,Bronze,,535,Faisalabad,Punjab,Central
+1692,S0012,Royal Collection 26,2020-04-13,Silver,0.00,178,Gujrat,Punjab,Central
+1693,S0013,Prime Hub 93,2022-02-18,Bronze,4.40,535,Faisalabad,Punjab,Central
+1694,S0014,Crown Collection 28,2020-07-25,Bronze,3.40,614,Karachi,Sindh,South
+1695,S0015,Habib Bazaar 58,2023-04-11,Unknown,,450,Lahore,Punjab,Central
+1696,S0016,Smart Store 89,2022-10-03,Gold,4.30,409,Sukkur,Sindh,South
+1697,S0017,Smart Brothers 29,2020-04-09,Gold,,450,Lahore,Punjab,Central
+1698,S0018,Rehman Collection 61,2019-12-26,Gold,4.70,86,Peshawar,Khyber Pakhtunkhwa,North
+1699,S0019,Prime Mart 22,2020-07-17,Silver,,31,Bahawalpur,Punjab,Central
+1700,S0020,Pak Brothers 33,2022-03-21,Silver,,643,Nawabshah,Sindh,South
+1701,S0021,Habib Hub 92,2020-04-20,Bronze,4.50,599,GarhKilaDhok,Punjab,Central
+1702,S0022,Urban Mart 88,2022-02-23,Silver,4.50,450,Lahore,Punjab,Central
+1703,S0023,Smart Mart 68,2023-10-18,Silver,5.00,450,Lahore,Punjab,Central
+1704,S0024,smart hub 55,2023-07-08,Bronze,3.60,614,Karachi,Sindh,South
+1705,S0025,Prime Store 23,2021-12-19,Bronze,3.10,86,Peshawar,Khyber Pakhtunkhwa,North
+1706,S0026,Smart Hub 60,2022-04-18,Silver,3.80,281,Rawalpindi,Unknown,Central
+1707,S0027,Golden Solutions 5,2023-04-06,Bronze,4.20,597,Gujranwala,Punjab,Central
+1708,S0028,Smart Mart 7,2021-08-13,Bronze,4.70,536,Sialkot,Punjab,Central
+1709,S0029,BEST HUB 53,2021-06-13,Bronze,4.60,614,Karachi,Sindh,South
+1710,S0030,Urban Traders 50,2023-09-11,Silver,3.30,178,Gujrat,Punjab,Central
+1711,S0031,Crown Hub 72,2023-11-20,Silver,3.00,551,DeraRah,Punjab,Central
+1712,S0032,Al-Noor Collection 16,2020-01-13,Bronze,4.00,614,Karachi,Sindh,South
+1713,S0033,Lahore Enterprises 39,2021-06-07,Unknown,4.00,86,Peshawar,Khyber Pakhtunkhwa,North
+1714,S0034,Royal Bazaar 21,2021-04-01,Bronze,3.00,614,Karachi,Sindh,South
+1715,S0035,Prime Traders 20,2023-02-08,Silver,0.00,450,Lahore,Punjab,Central
+1716,S0036,Prime Traders 17,2020-03-01,Bronze,0.00,450,Lahore,Punjab,Central
+1717,S0037,Zam Zam Bazaar 94,2021-10-19,Bronze,3.70,450,Lahore,Punjab,Central
+1718,S0038,Royal Bazaar 58,2021-10-25,Bronze,4.70,450,Lahore,Punjab,Central
+1719,S0039,Karachi Imports 8,2021-06-13,Bronze,4.20,614,Karachi,Sindh,South
+1720,S0040,Crown Brothers 47,2023-02-22,Bronze,4.00,233,MorMor,Punjab,Central
+1721,S0041,Al-Noor Bazaar 73,2021-11-12,Silver,3.90,404,BhalWala,Balochistan,South
+1722,S0042,Prime Imports 24,,Bronze,,617,Dera Ghazi Khan,Punjab,Central
+1723,S0043,Star Enterprises 32,2021-04-30,Silver,,374,AliJand,Punjab,Central
+1724,S0044,Prime Bazaar 67,2022-11-13,Silver,,464,Jhelum,Punjab,Central
+1725,S0045,Crown Bazaar 50,2020-02-24,Silver,3.70,426,Hyderabad,Sindh,South
+1726,S0046,Prime Hub 50,2021-04-29,Bronze,4.30,570,Larkana,Sindh,South
+1727,S0047,Al-Noor Store 29,2021-04-11,Bronze,4.70,614,Karachi,Sindh,South
+1728,S0048,Best Enterprises 2,2021-09-13,Bronze,3.60,614,Karachi,Sindh,South
+1729,S0049,Royal Traders 28,2023-01-22,Silver,3.70,450,Lahore,Punjab,Central
+1730,S0050,Pak Mart 79,2021-07-16,Bronze,4.20,450,Lahore,Punjab,Central
+1731,S0051,Habib Store 53,2022-01-06,Unknown,3.50,324,RahDhok,Punjab,Central
+1732,S0052,Karachi Bazaar 76,2023-11-05,Bronze,4.00,614,Karachi,Sindh,South
+1733,S0053,Karachi Brothers 15,2022-05-11,Bronze,4.10,178,Gujrat,Punjab,Central
+1734,S0054,Al-Noor Mart 30,2022-04-28,Bronze,3.30,456,Quetta,Balochistan,South
+1735,S0055,Prime Solutions 13,2020-10-16,Silver,3.90,86,Peshawar,Khyber Pakhtunkhwa,North
+1736,S0056,Al-Noor Traders 70,2020-08-05,Bronze,4.40,614,Karachi,Sindh,South
+1737,S0057,Rehman Brothers 20,2021-07-29,Gold,3.80,393,NagarMian,Unknown,North
+1738,S0058,Metro Bazaar 73,2019-12-04,Gold,3.30,614,Karachi,Sindh,South
+1739,S0059,Lahore Collection 22,2022-04-30,Bronze,4.90,281,Rawalpindi,Unknown,Central
+1740,S0060,Crown Store 54,2023-06-18,Bronze,5.00,450,Lahore,Punjab,Central
+1741,S0061,golden store 84,2022-01-01,Bronze,4.70,336,KhanSarai,Khyber Pakhtunkhwa,North
+1742,S0062,Metro Traders 8,2020-11-20,Gold,3.60,641,Mansehra,Khyber Pakhtunkhwa,North
+1743,S0063,Prime Store 43,2021-02-14,Bronze,4.80,597,Gujranwala,Punjab,Central
+1744,S0064,Crown Enterprises 89,2021-01-20,Bronze,4.40,614,Karachi,Sindh,South
+1745,S0065,Lahore Store 90,2023-09-05,Silver,4.70,213,MorKhurd,Punjab,Central
+1746,S0066,Habib Mart 25,2020-06-06,Bronze,4.50,434,Sargodha,Punjab,Central
+1747,S0067,Prime Enterprises 66,2020-09-17,Silver,4.60,535,Faisalabad,Punjab,Central
+1748,S0068,Rehman Brothers 34,2023-09-21,Bronze,3.90,614,Karachi,Sindh,South
+1749,S0069,Zam Zam Collection 41,2021-07-22,Bronze,4.20,614,Karachi,Sindh,South
+1750,S0070,Habib Traders 98,,Bronze,,31,Bahawalpur,Punjab,Central
+1751,S0071,Royal Mart 46,2022-09-30,Silver,3.70,535,Faisalabad,Punjab,Central
+1752,S0072,STAR SOLUTIONS 32,2020-10-03,Bronze,4.10,281,Rawalpindi,Unknown,Central
+1753,S0073,pak traders 44,2020-12-28,Unknown,,488,GolaGarh,Khyber Pakhtunkhwa,North
+1754,S0074,Pak Solutions 28,2022-06-12,Bronze,4.10,329,Bannu,Khyber Pakhtunkhwa,North
+1755,S0075,Metro Solutions 73,2022-01-03,Silver,4.30,199,PurTando,Khyber Pakhtunkhwa,North
+1756,S0076,Lahore Enterprises 17,2021-05-15,Unknown,4.30,64,NagarDhokSarai,Sindh,South
+1757,S0077,Pak Solutions 5,2019-11-27,Bronze,3.30,347,Islamabad,Islamabad,North
+1758,S0078,Best Bazaar 30,2022-07-29,Bronze,3.90,395,Skardu,Gilgit-Baltistan,North
+1759,S0079,Karachi Traders 91,2022-11-22,Silver,4.20,614,Karachi,Sindh,South
+1760,S0080,Prime Traders 46,2021-05-22,Gold,0.00,601,Multan,Punjab,Central
+1761,S0081,Crown Brothers 22,2022-02-08,Bronze,4.40,601,Multan,Punjab,Central
+1762,S0082,Habib Traders 53,2020-03-29,Bronze,3.80,395,Skardu,Gilgit-Baltistan,North
+1763,S0083,Rehman Collection 19,2021-07-19,Silver,4.60,281,Rawalpindi,Unknown,Central
+1764,S0084,Rehman Mart 91,,Silver,4.60,614,Karachi,Sindh,South
+1765,S0085,Smart Mart 6,,Silver,4.10,193,KalanDeraKhurd,Punjab,Central
+1766,S0086,Zam Zam Solutions 61,2021-10-22,Bronze,4.50,518,JandShahRah,Punjab,Central
+1767,S0087,Metro Hub 52,2023-02-23,Bronze,3.30,347,Islamabad,Islamabad,North
+1768,S0088,Al-Noor Solutions 71,2019-12-08,Gold,4.40,535,Faisalabad,Punjab,Central
+1769,S0089,Al-Noor Imports 54,2020-07-12,Bronze,3.60,286,NauLal,Sindh,South
+1770,S0090,Crown Hub 49,2020-09-04,Bronze,3.60,450,Lahore,Punjab,Central
+1771,S0091,Rehman Traders 87,2021-06-30,Bronze,4.30,471,Mirpur Khas,Sindh,South
+1772,S0092,Crown Brothers 3,,Bronze,3.60,450,Lahore,Punjab,Central
+1773,S0093,Rehman Mart 5,2021-01-12,Bronze,4.50,601,Multan,Punjab,Central
+1774,S0094,Best Enterprises 20,2022-04-26,Bronze,,614,Karachi,Sindh,South
+1775,S0095,Prime Imports 92,2022-03-17,Bronze,3.40,450,Lahore,Punjab,Central
+1776,S0096,Al-Noor Mart 6,2020-05-06,Bronze,3.90,291,Dera Ismail Khan,Khyber Pakhtunkhwa,North
+1777,S0097,Urban Mart 75,2023-06-14,Unknown,3.00,86,Peshawar,Khyber Pakhtunkhwa,North
+1778,S0098,zam zam bazaar 59,2021-04-01,Bronze,3.20,489,WalaChakKhan,Punjab,Central
+1779,S0099,Pak Traders 77,2023-04-28,Bronze,3.30,450,Lahore,Punjab,Central
+1780,S0100,Zam Zam Traders 59,2019-11-28,Bronze,4.80,601,Multan,Punjab,Central
+1781,S0101,Crown Collection 1,2022-10-16,Bronze,3.40,614,Karachi,Sindh,South
+1782,S0102,Habib Traders 74,,Bronze,4.20,627,DeraDera,Punjab,Central
+1783,S0103,Golden Solutions 40,2020-02-27,Bronze,3.10,347,Islamabad,Islamabad,North
+1784,S0104,Best Hub 33,2023-03-13,Bronze,3.40,347,Islamabad,Islamabad,North
+1785,S0105,Prime Collection 71,2022-04-09,Bronze,4.40,614,Karachi,Sindh,South
+1786,S0106,Royal Mart 97,2020-10-25,Bronze,4.10,536,Sialkot,Punjab,Central
+1787,S0107,Royal Mart 46,2020-03-07,Bronze,4.30,614,Karachi,Sindh,South
+1788,S0108,Royal Mart 26,2020-12-10,Gold,4.10,426,Hyderabad,Sindh,South
+1789,S0109,Pak Hub 77,2023-03-16,Silver,3.20,614,Karachi,Sindh,South
+1790,S0110,Star Traders 95,2020-11-04,Bronze,4.90,614,Karachi,Sindh,South
+1791,S0111,Lahore Collection 41,2022-04-27,Silver,4.90,86,Peshawar,Khyber Pakhtunkhwa,North
+1792,S0112,Best Bazaar 64,2021-10-10,Bronze,4.70,243,ThalMian,Balochistan,South
+1793,S0113,Habib Hub 36,,Bronze,4.70,434,Sargodha,Punjab,Central
+1794,S0114,Crown Solutions 12,2020-08-03,Bronze,4.10,548,Mardan,Khyber Pakhtunkhwa,North
+1795,S0115,Best Solutions 48,2022-12-23,Bronze,4.60,347,Islamabad,Islamabad,North
+1796,S0116,Al-Noor Bazaar 64,2022-03-12,Silver,4.50,450,Lahore,Punjab,Central
+1797,S0117,golden imports 2,2022-03-18,Gold,4.50,450,Lahore,Punjab,Central
+1798,S0118,Urban Bazaar 34,2022-05-10,Unknown,3.90,86,Peshawar,Khyber Pakhtunkhwa,North
+1799,S0119,Best Hub 88,2023-06-29,Silver,3.70,455,PindGulDera,Punjab,Central
+1800,S0120,Crown Brothers 11,2022-08-03,Bronze,4.40,347,Islamabad,Islamabad,North
+1801,S0121,Zam Zam Traders 16,2023-10-19,Bronze,4.00,614,Karachi,Sindh,South
+1802,S0122,Royal Bazaar 28,2021-12-02,Bronze,4.40,450,Lahore,Punjab,Central
+1803,S0123,Urban Collection 42,2023-10-13,Bronze,4.30,257,KhurdAli,Punjab,Central
+1804,S0124,Habib Imports 15,2021-07-17,Silver,3.80,275,KhanGarhKalan,Khyber Pakhtunkhwa,North
+1805,S0125,Crown Bazaar 29,2023-02-25,Bronze,5.00,614,Karachi,Sindh,South
+1806,S0126,Best Mart 97,2020-10-13,Bronze,4.90,450,Lahore,Punjab,Central
+1807,S0127,Smart Mart 6,2023-03-01,Bronze,0.00,450,Lahore,Punjab,Central
+1808,S0128,Lahore Solutions 43,2023-03-22,Bronze,2.80,281,Rawalpindi,Unknown,Central
+1809,S0129,Best Hub 15,2022-10-22,Bronze,4.00,371,Gilgit,Gilgit-Baltistan,North
+1810,S0130,Prime Traders 5,2021-06-23,Bronze,4.20,614,Karachi,Sindh,South
+1811,S0131,Karachi Store 25,2020-02-04,Silver,4.70,614,Karachi,Sindh,South
+1812,S0132,Al-Noor Store 77,2020-11-01,Silver,3.80,281,Rawalpindi,Unknown,Central
+1813,S0133,Prime Bazaar 21,2021-03-24,Silver,3.60,347,Islamabad,Islamabad,North
+1814,S0134,Urban Collection 84,2023-02-26,Bronze,3.30,281,Rawalpindi,Unknown,Central
+1815,S0135,Al-Noor Hub 94,,Bronze,4.30,614,Karachi,Sindh,South
+1816,S0136,Zam Zam Store 79,2022-01-09,Bronze,4.00,347,Islamabad,Islamabad,North
+1817,S0137,Habib Solutions 90,,Silver,4.10,450,Lahore,Punjab,Central
+1818,S0138,Karachi Collection 28,2020-06-18,Unknown,3.40,285,PindDeraNau,Khyber Pakhtunkhwa,North
+1819,S0139,Pak Collection 91,2020-08-25,Gold,3.30,535,Faisalabad,Punjab,Central
+1820,S0140,Urban Collection 40,2023-09-28,Bronze,4.00,516,BastiLalGul,Khyber Pakhtunkhwa,North
+1821,S0141,Rehman Mart 30,2023-04-16,Bronze,4.30,450,Lahore,Punjab,Central
+1822,S0142,Karachi Hub 12,,Bronze,4.90,86,Peshawar,Khyber Pakhtunkhwa,North
+1823,S0143,Crown Hub 76,2022-01-16,Bronze,3.90,434,Sargodha,Punjab,Central
+1824,S0144,Rehman Brothers 74,2022-09-26,Gold,3.40,450,Lahore,Punjab,Central
+1825,S0145,Rehman Brothers 39,2020-09-24,Silver,4.10,614,Karachi,Sindh,South
+1826,S0146,Metro Bazaar 27,2020-01-25,Bronze,4.40,329,Bannu,Khyber Pakhtunkhwa,North
+1827,S0147,Al-Noor Imports 75,,Bronze,4.70,516,BastiLalGul,Khyber Pakhtunkhwa,North
+1828,S0148,Crown Store 93,2021-02-27,Silver,4.30,472,GarhLalThal,Sindh,South
+1829,S0149,Karachi Hub 48,2023-10-21,Gold,4.20,426,Hyderabad,Sindh,South
+1830,S0150,Zam Zam Mart 96,2021-10-27,Bronze,4.10,347,Islamabad,Islamabad,North
+1831,S0151,Al-Noor Solutions 51,2021-07-31,Bronze,4.80,347,Islamabad,Islamabad,North
+1832,S0152,Royal Solutions 45,2020-12-20,Bronze,3.70,548,Mardan,Khyber Pakhtunkhwa,North
+1833,S0153,Golden Traders 68,2022-03-27,Unknown,3.80,620,GulGola,Punjab,Central
+1834,S0154,Rehman Mart 78,2020-01-03,Bronze,3.50,281,Rawalpindi,Unknown,Central
+1835,S0155,Golden Enterprises 87,2020-02-26,Bronze,3.80,347,Islamabad,Islamabad,North
+1836,S0156,Pak Store 62,2023-11-19,Bronze,3.60,86,Peshawar,Khyber Pakhtunkhwa,North
+1837,S0157,Pak Enterprises 91,2022-09-29,Bronze,3.90,23,RahMianMian,Punjab,Central
+1838,S0158,Star Brothers 73,2020-04-17,Silver,3.50,281,Rawalpindi,Unknown,Central
+1839,S0159,Crown Enterprises 15,2022-12-19,Bronze,4.80,614,Karachi,Sindh,South
+1840,S0160,Zam Zam Collection 75,2020-01-03,Bronze,3.80,503,Mianwali,Punjab,Central
+1841,S0161,Prime Mart 53,,Bronze,4.10,347,Islamabad,Islamabad,North
+1842,S0162,Golden Imports 18,2021-02-04,Bronze,3.40,450,Lahore,Punjab,Central
+1843,S0163,Karachi Bazaar 83,2023-02-27,Gold,4.30,450,Lahore,Punjab,Central
+1844,S0164,Smart Enterprises 90,2021-03-06,Silver,,86,Peshawar,Khyber Pakhtunkhwa,North
+1845,S0165,Star Brothers 12,2023-06-16,Bronze,3.40,214,TandoThal,Khyber Pakhtunkhwa,North
+1846,S0166,Karachi Traders 14,2019-12-08,Bronze,4.30,450,Lahore,Punjab,Central
+1847,S0167,Al-Noor Bazaar 22,2022-12-05,Bronze,4.00,450,Lahore,Punjab,Central
+1848,S0168,Golden Bazaar 13,2023-03-19,Bronze,3.90,116,Abbottabad,Khyber Pakhtunkhwa,North
+1849,S0169,Habib Hub 71,2022-10-20,Bronze,4.70,281,Rawalpindi,Unknown,Central
+1850,S0170,Crown Brothers 28,2022-09-13,Bronze,,392,Mirpur,Unknown,North
+1851,S0171,Rehman Traders 43,2023-06-30,Bronze,5.00,584,SaraiGarhGarh,Sindh,South
+1852,S0172,Rehman Enterprises 25,2023-10-21,Bronze,4.40,536,Sialkot,Punjab,Central
+1853,S0173,Metro Bazaar 13,2022-08-23,Bronze,4.70,614,Karachi,Sindh,South
+1854,S0174,Lahore Bazaar 8,2022-07-06,Bronze,4.30,535,Faisalabad,Punjab,Central
+1855,S0175,Crown Enterprises 11,2020-03-15,Silver,3.30,456,Quetta,Balochistan,South
+1856,S0176,Prime Brothers 94,2022-10-29,Bronze,4.10,471,Mirpur Khas,Sindh,South
+1857,S0177,Royal Collection 82,,Bronze,5.00,426,Hyderabad,Sindh,South
+1858,S0178,Pak Mart 50,2019-12-27,Gold,4.30,450,Lahore,Punjab,Central
+1859,S0179,Smart Enterprises 49,2021-05-31,Bronze,4.00,614,Karachi,Sindh,South
+1860,S0180,Lahore Enterprises 17,,Bronze,4.90,456,Quetta,Balochistan,South
+1861,S0181,Karachi Brothers 65,2021-05-10,Bronze,4.40,614,Karachi,Sindh,South
+1862,S0182,Golden Imports 65,2023-08-11,Bronze,4.50,614,Karachi,Sindh,South
+1863,S0183,Urban Collection 3,2020-02-02,Bronze,3.90,281,Rawalpindi,Unknown,Central
+1864,S0184,Karachi Enterprises 28,2023-08-18,Gold,,450,Lahore,Punjab,Central
+1865,S0185,Metro Enterprises 81,2023-07-09,Gold,3.80,614,Karachi,Sindh,South
+1866,S0186,Star Bazaar 14,2022-07-07,Silver,3.60,222,GolaDhok,Punjab,Central
+1867,S0187,Crown Brothers 87,2020-12-09,Bronze,3.90,371,Gilgit,Gilgit-Baltistan,North
+1868,S0188,Rehman Hub 90,2021-01-20,Silver,3.10,637,KilaSarai,Punjab,Central
+1945,S0265,Pak Collection 16,2020-05-24,Unknown,4.30,614,Karachi,Sindh,South
+1869,S0189,Royal Solutions 22,,Silver,3.40,535,Faisalabad,Punjab,Central
+1870,S0190,Prime Hub 54,2021-12-03,Silver,4.20,614,Karachi,Sindh,South
+1871,S0191,Royal Store 26,2022-05-11,Silver,4.00,614,Karachi,Sindh,South
+1872,S0192,Pak Mart 28,2023-07-01,Bronze,4.50,614,Karachi,Sindh,South
+1873,S0193,Rehman Brothers 17,2021-12-22,Bronze,3.90,256,Turbat,Balochistan,South
+1874,S0194,Royal Imports 89,2021-08-23,Bronze,4.00,178,Gujrat,Punjab,Central
+1875,S0195,Royal Solutions 57,2021-11-28,Bronze,,294,GulKilaMari,Unknown,Central
+1876,S0196,Crown Store 20,2022-01-02,Bronze,3.50,614,Karachi,Sindh,South
+1877,S0197,Prime Store 57,2022-05-14,Bronze,,614,Karachi,Sindh,South
+1878,S0198,Prime Brothers 64,,Bronze,4.70,536,Sialkot,Punjab,Central
+1879,S0199,Crown Imports 33,2022-01-22,Silver,3.50,570,Larkana,Sindh,South
+1880,S0200,Crown Imports 42,2023-02-14,Silver,,428,JandChak,Balochistan,South
+1881,S0201,Pak Solutions 84,,Silver,5.00,294,GulKilaMari,Unknown,Central
+1882,S0202,Royal Brothers 83,2021-09-20,Bronze,4.70,347,Islamabad,Islamabad,North
+1883,S0203,Rehman Traders 67,2021-05-12,Gold,0.00,454,AliSaraiLal,Balochistan,South
+1884,S0204,LAHORE ENTERPRISES 24,2021-08-29,Bronze,4.00,450,Lahore,Punjab,Central
+1885,S0205,METRO STORE 5,2023-08-27,Bronze,3.90,60,GolaKotTando,Azad Kashmir,North
+1886,S0206,Smart Store 72,2021-07-31,Bronze,4.50,614,Karachi,Sindh,South
+1887,S0207,Urban Solutions 91,2020-02-24,Bronze,3.40,614,Karachi,Sindh,South
+1888,S0208,Crown Solutions 79,2020-06-07,Bronze,4.40,115,DeraGola,Sindh,South
+1889,S0209,Royal Collection 25,2020-04-02,Silver,3.90,614,Karachi,Sindh,South
+1890,S0210,Urban Mart 79,2020-10-06,Bronze,3.50,596,ChakMianShah,Sindh,South
+1891,S0211,Urban Enterprises 72,2020-12-25,Bronze,4.00,174,ChakMian,Sindh,South
+1892,S0212,Urban Bazaar 50,2021-12-20,Silver,,614,Karachi,Sindh,South
+1893,S0213,Lahore Solutions 46,2023-03-05,Bronze,4.00,614,Karachi,Sindh,South
+1894,S0214,Metro Mart 69,2020-12-11,Bronze,,614,Karachi,Sindh,South
+1895,S0215,Crown Bazaar 52,2023-10-19,Bronze,5.00,572,Okara,Punjab,Central
+1896,S0216,Al-Noor Mart 75,2021-05-20,Bronze,3.60,641,Mansehra,Khyber Pakhtunkhwa,North
+1897,S0217,Best Collection 73,2022-09-05,Bronze,3.00,347,Islamabad,Islamabad,North
+1898,S0218,Lahore Mart 70,2022-10-13,Silver,3.70,548,Mardan,Khyber Pakhtunkhwa,North
+1899,S0219,Prime Collection 51,2023-03-21,Gold,3.80,409,Sukkur,Sindh,South
+1900,S0220,Metro Solutions 51,,Bronze,4.60,614,Karachi,Sindh,South
+1901,S0221,Metro Brothers 94,2021-02-20,Silver,4.10,548,Mardan,Khyber Pakhtunkhwa,North
+1902,S0222,Best Enterprises 2,,Bronze,,347,Islamabad,Islamabad,North
+1903,S0223,Metro Traders 57,2023-09-11,Silver,4.10,347,Islamabad,Islamabad,North
+1904,S0224,Karachi Solutions 84,2022-04-15,Bronze,4.20,450,Lahore,Punjab,Central
+1905,S0225,Royal Mart 11,2023-05-25,Bronze,4.70,450,Lahore,Punjab,Central
+1906,S0226,Zam Zam Mart 58,2023-06-07,Silver,3.40,614,Karachi,Sindh,South
+1907,S0227,Star Solutions 75,2021-08-18,Bronze,5.00,86,Peshawar,Khyber Pakhtunkhwa,North
+1908,S0228,Golden Traders 58,2022-05-14,Gold,4.00,536,Sialkot,Punjab,Central
+1909,S0229,Urban Traders 53,2021-03-05,Silver,4.20,213,MorKhurd,Punjab,Central
+1910,S0230,Al-Noor Traders 36,2020-05-31,Bronze,4.80,614,Karachi,Sindh,South
+1911,S0231,Al-Noor Traders 1,2023-02-09,Bronze,3.70,616,NauPind,Punjab,Central
+1912,S0232,Karachi Brothers 18,2022-06-21,Bronze,4.70,643,Nawabshah,Sindh,South
+1913,S0233,Urban Collection 8,2022-10-22,Bronze,,450,Lahore,Punjab,Central
+1914,S0234,Royal Traders 83,2023-12-01,Silver,5.00,281,Rawalpindi,Unknown,Central
+1915,S0235,Al-Noor Bazaar 14,2022-11-23,Silver,4.60,513,KhurdAliRah,Sindh,South
+1916,S0236,Crown Hub 58,2023-01-01,Silver,3.90,617,Dera Ghazi Khan,Punjab,Central
+1917,S0237,Crown Hub 90,2021-09-02,Gold,4.50,617,Dera Ghazi Khan,Punjab,Central
+1918,S0238,Prime Bazaar 19,2020-12-13,Silver,4.50,634,AliRahDhok,Gilgit-Baltistan,North
+1919,S0239,Habib Hub 74,2020-12-16,Bronze,4.20,450,Lahore,Punjab,Central
+1920,S0240,Prime Enterprises 79,2020-07-19,Bronze,4.40,484,AbadRahJand,Sindh,South
+1921,S0241,Star Collection 65,2022-05-29,Bronze,,426,Hyderabad,Sindh,South
+1922,S0242,Crown Enterprises 71,2020-01-10,Bronze,4.70,614,Karachi,Sindh,South
+1923,S0243,Rehman Solutions 59,2023-07-04,Silver,3.90,281,Rawalpindi,Unknown,Central
+1924,S0244,Rehman Mart 75,2023-11-14,Bronze,4.20,450,Lahore,Punjab,Central
+1925,S0245,Rehman Solutions 81,2022-11-08,Bronze,4.30,614,Karachi,Sindh,South
+1926,S0246,Best Bazaar 17,,Silver,3.40,450,Lahore,Punjab,Central
+1927,S0247,Lahore Imports 72,,Silver,3.40,614,Karachi,Sindh,South
+1928,S0248,Prime Bazaar 73,2021-04-29,Bronze,4.10,614,Karachi,Sindh,South
+1929,S0249,Zam Zam Traders 49,2023-08-17,Bronze,3.60,450,Lahore,Punjab,Central
+1930,S0250,Urban Collection 17,2021-01-25,Silver,4.10,347,Islamabad,Islamabad,North
+1931,S0251,Smart Traders 54,2022-12-13,Bronze,4.10,614,Karachi,Sindh,South
+1932,S0252,Best Collection 85,2023-07-03,Bronze,4.10,442,TandoJand,Unknown,Central
+1933,S0253,Al-Noor Collection 46,2022-08-27,Silver,3.30,347,Islamabad,Islamabad,North
+1934,S0254,Prime Brothers 54,2022-05-05,Bronze,3.40,597,Gujranwala,Punjab,Central
+1935,S0255,Al-Noor Traders 49,2021-12-11,Bronze,0.00,614,Karachi,Sindh,South
+1936,S0256,Al-Noor Hub 6,2020-12-14,Gold,3.30,536,Sialkot,Punjab,Central
+1937,S0257,Golden Bazaar 11,2021-04-18,Bronze,3.50,281,Rawalpindi,Unknown,Central
+1938,S0258,Habib Solutions 20,2023-08-07,Bronze,4.40,178,Gujrat,Punjab,Central
+1939,S0259,Star Bazaar 72,2020-01-22,Silver,4.40,614,Karachi,Sindh,South
+1940,S0260,Zam Zam Solutions 84,2021-04-11,Silver,4.10,536,Sialkot,Punjab,Central
+1941,S0261,Habib Brothers 5,2020-03-03,Bronze,4.00,614,Karachi,Sindh,South
+1942,S0262,Urban Enterprises 14,2022-07-12,Silver,3.20,614,Karachi,Sindh,South
+1943,S0263,Royal Bazaar 82,2023-04-28,Bronze,,450,Lahore,Punjab,Central
+1944,S0264,Pak Imports 87,2022-04-12,Bronze,3.90,395,Skardu,Gilgit-Baltistan,North
+1946,S0266,Urban Collection 37,2022-03-03,Bronze,4.30,145,Jhang,Punjab,Central
+1947,S0267,Al-Noor Imports 30,2023-06-08,Bronze,4.80,614,Karachi,Sindh,South
+1948,S0268,ROYAL COLLECTION 19,2020-11-07,Silver,3.30,450,Lahore,Punjab,Central
+1949,S0269,Al-Noor Hub 34,2022-12-02,Bronze,4.00,209,Rahnagarnau,Punjab,Central
+1950,S0270,Al-Noor Store 22,2022-06-25,Bronze,,347,Islamabad,Islamabad,North
+1951,S0271,Karachi Imports 61,2020-12-16,Gold,4.00,614,Karachi,Sindh,South
+1952,S0272,Golden Store 58,2021-02-11,Silver,4.90,116,Abbottabad,Khyber Pakhtunkhwa,North
+1953,S0273,Crown Traders 94,2022-03-11,Bronze,3.80,601,Multan,Punjab,Central
+1954,S0274,Star Collection 44,,Bronze,3.80,486,ThalKhurdMari,Khyber Pakhtunkhwa,North
+1955,S0275,Rehman Enterprises 55,2020-07-21,Silver,4.70,614,Karachi,Sindh,South
+1956,S0276,Pak Collection 16,2023-01-01,Bronze,4.70,553,AliMianBhal,Punjab,Central
+1957,S0277,Golden Brothers 15,2020-01-17,Bronze,,347,Islamabad,Islamabad,North
+1958,S0278,KARACHI BROTHERS 75,2022-10-27,Bronze,3.90,471,Mirpur Khas,Sindh,South
+1959,S0279,Lahore Brothers 33,2022-05-14,Bronze,4.90,614,Karachi,Sindh,South
+1960,S0280,Golden Hub 34,,Silver,4.50,426,Hyderabad,Sindh,South
+1961,S0281,Best Enterprises 91,,Gold,3.50,145,Jhang,Punjab,Central
+1962,S0282,Smart Enterprises 30,2022-12-26,Bronze,,535,Faisalabad,Punjab,Central
+1963,S0283,Prime Imports 71,2022-02-25,Gold,4.20,33,JandDera,Punjab,Central
+1964,S0284,Karachi Solutions 78,2020-07-01,Silver,4.40,536,Sialkot,Punjab,Central
+1965,S0285,Royal Store 47,2020-03-07,Bronze,4.30,535,Faisalabad,Punjab,Central
+1966,S0286,Star Traders 3,2021-06-07,Gold,3.90,346,Rahim Yar Khan,Punjab,Central
+1967,S0287,Al-Noor Bazaar 6,2022-09-20,Bronze,3.70,614,Karachi,Sindh,South
+1968,S0288,Al-Noor Store 32,2020-04-07,Gold,0.00,347,Islamabad,Islamabad,North
+1969,S0289,Zam Zam Imports 66,2022-09-28,Bronze,4.60,614,Karachi,Sindh,South
+1970,S0290,Al-Noor Hub 54,2019-12-17,Bronze,4.70,570,Larkana,Sindh,South
+1971,S0291,Smart Store 26,2022-01-10,Silver,,496,AliKilaKalan,Gilgit-Baltistan,North
+1972,S0292,Al-Noor Bazaar 61,2021-05-14,Bronze,3.40,535,Faisalabad,Punjab,Central
+1973,S0293,Pak Collection 75,2020-08-29,Bronze,4.20,544,GulShah,Punjab,Central
+1974,S0294,Golden Brothers 34,2020-05-12,Silver,3.50,450,Lahore,Punjab,Central
+1975,S0295,Habib Enterprises 10,2021-11-06,Silver,0.00,614,Karachi,Sindh,South
+1976,S0296,Golden Hub 74,2023-05-23,Bronze,,394,Attock,Punjab,Central
+1977,S0297,Star Collection 66,2022-02-16,Bronze,0.00,450,Lahore,Punjab,Central
+1978,S0298,Habib Solutions 12,2021-10-01,Bronze,4.00,614,Karachi,Sindh,South
+1979,S0299,Lahore Collection 89,2022-03-06,Unknown,4.20,440,ThalKotAbad,Khyber Pakhtunkhwa,North
+1980,S0300,Al-Noor Bazaar 94,2022-12-21,Silver,3.80,56,Kohat,Khyber Pakhtunkhwa,North
+1981,S0301,Zam Zam Enterprises 53,2020-08-31,Bronze,4.00,614,Karachi,Sindh,South
+1982,S0302,Pak Enterprises 18,2020-06-07,Unknown,4.00,379,Mingora,Khyber Pakhtunkhwa,North
+1983,S0303,Karachi Enterprises 10,2023-02-04,Unknown,4.30,178,Gujrat,Punjab,Central
+1984,S0304,Rehman Solutions 46,2020-07-24,Unknown,3.90,597,Gujranwala,Punjab,Central
+1985,S0305,Pak Brothers 22,2021-04-29,Bronze,4.30,86,Peshawar,Khyber Pakhtunkhwa,North
+1986,S0306,Habib Traders 10,2021-11-07,Bronze,3.40,450,Lahore,Punjab,Central
+1987,S0307,Rehman Mart 80,2022-12-10,Bronze,4.10,492,TandoAbadKalan,Punjab,Central
+1988,S0308,Lahore Imports 66,2021-07-07,Gold,3.80,450,Lahore,Punjab,Central
+1989,S0309,Zam Zam Mart 76,2021-01-07,Silver,3.70,426,Hyderabad,Sindh,South
+1990,S0310,Best Store 49,2023-01-21,Gold,4.10,450,Lahore,Punjab,Central
+1991,S0311,Al-Noor Solutions 11,2020-02-05,Bronze,4.70,450,Lahore,Punjab,Central
+1992,S0312,Urban Solutions 61,2022-08-11,Gold,,450,Lahore,Punjab,Central
+1993,S0313,Royal Store 9,2022-06-30,Bronze,4.30,347,Islamabad,Islamabad,North
+1994,S0314,Royal Solutions 87,2021-03-21,Bronze,2.80,264,GolaAbadNagar,Punjab,Central
+1995,S0315,Smart Collection 5,,Bronze,4.20,56,Kohat,Khyber Pakhtunkhwa,North
+1996,S0316,Karachi Hub 42,,Bronze,4.30,450,Lahore,Punjab,Central
+1997,S0317,Urban Brothers 96,,Bronze,4.80,187,PurDera,Punjab,Central
+1998,S0318,Lahore Hub 2,,Bronze,3.80,347,Islamabad,Islamabad,North
+1999,S0319,Star Traders 80,2022-12-02,Bronze,3.50,395,Skardu,Gilgit-Baltistan,North
+2000,S0320,Al-Noor Imports 34,2023-11-03,Bronze,3.80,49,MariGulKila,Punjab,Central
+2001,S0321,Royal Bazaar 3,,Bronze,3.20,450,Lahore,Punjab,Central
+2002,S0322,Metro Imports 67,2022-07-19,Gold,3.30,86,Peshawar,Khyber Pakhtunkhwa,North
+2003,S0323,Royal Solutions 91,2021-06-05,Bronze,3.10,281,Rawalpindi,Unknown,Central
+2004,S0324,HABIB MART 72,2020-04-01,Bronze,4.50,434,Sargodha,Punjab,Central
+2005,S0325,Urban Brothers 57,2023-09-17,Silver,3.60,86,Peshawar,Khyber Pakhtunkhwa,North
+2006,S0326,Crown Store 18,2021-11-15,Gold,4.70,614,Karachi,Sindh,South
+2007,S0327,Crown Brothers 12,2021-05-17,Bronze,,614,Karachi,Sindh,South
+2008,S0328,Crown Traders 97,2022-08-19,Silver,3.00,614,Karachi,Sindh,South
+2009,S0329,Lahore Traders 18,2023-11-26,Bronze,3.70,108,AliChakAli,Khyber Pakhtunkhwa,North
+2010,S0330,Smart Bazaar 90,2020-05-16,Bronze,4.50,601,Multan,Punjab,Central
+2011,S0331,Prime Brothers 98,2022-03-30,Silver,3.80,614,Karachi,Sindh,South
+2012,S0332,Smart Mart 38,2022-05-30,Bronze,,450,Lahore,Punjab,Central
+2013,S0333,Prime Hub 83,2020-04-06,Unknown,2.60,450,Lahore,Punjab,Central
+2014,S0334,Golden Bazaar 91,2022-01-25,Bronze,4.00,347,Islamabad,Islamabad,North
+2015,S0335,Karachi Bazaar 73,,Bronze,4.40,86,Peshawar,Khyber Pakhtunkhwa,North
+2016,S0336,Metro Imports 45,2022-12-18,Silver,4.70,347,Islamabad,Islamabad,North
+2017,S0337,Rehman Enterprises 47,2022-01-18,Bronze,,374,AliJand,Punjab,Central
+2018,S0338,Al-Noor Store 45,2023-06-18,Bronze,4.90,347,Islamabad,Islamabad,North
+2019,S0339,Habib Hub 21,2021-03-07,Silver,3.50,426,Hyderabad,Sindh,South
+2020,S0340,Crown Hub 12,2022-09-21,Unknown,4.10,205,MianNagarDhok,Punjab,Central
+2021,S0341,Prime Collection 79,2019-11-27,Bronze,4.10,281,Rawalpindi,Unknown,Central
+2022,S0342,ZAM ZAM STORE 23,,Unknown,3.30,614,Karachi,Sindh,South
+2023,S0343,Prime Imports 20,2022-12-26,Silver,3.60,286,NauLal,Sindh,South
+2024,S0344,habib brothers 54,2020-07-02,Bronze,,135,KhurdKalan,Punjab,Central
+2025,S0345,Lahore Collection 51,2021-07-02,Bronze,4.20,614,Karachi,Sindh,South
+2026,S0346,Crown Collection 95,2023-11-20,Silver,4.30,346,Rahim Yar Khan,Punjab,Central
+2027,S0347,Urban Bazaar 86,2019-12-05,Bronze,4.50,86,Peshawar,Khyber Pakhtunkhwa,North
+2028,S0348,Best Solutions 33,2022-03-25,Bronze,4.60,86,Peshawar,Khyber Pakhtunkhwa,North
+2029,S0349,Prime Mart 8,2023-11-30,Silver,4.10,450,Lahore,Punjab,Central
+2030,S0350,Karachi Imports 45,2021-06-16,Gold,5.00,564,GarhAbad,Sindh,South
+2031,S0351,Zam Zam Solutions 80,2022-04-08,Unknown,3.90,371,Gilgit,Gilgit-Baltistan,North
+2032,S0352,Golden Traders 24,2022-01-23,Bronze,5.00,450,Lahore,Punjab,Central
+2033,S0353,Smart Bazaar 57,2022-07-17,Silver,3.50,614,Karachi,Sindh,South
+2034,S0354,Prime Bazaar 82,2023-06-05,Bronze,4.00,450,Lahore,Punjab,Central
+2035,S0355,Royal Traders 94,2023-11-19,Bronze,3.40,347,Islamabad,Islamabad,North
+2036,S0356,Golden Collection 72,2023-03-14,Bronze,,409,Sukkur,Sindh,South
+2037,S0357,Royal Imports 83,2022-12-13,Bronze,4.10,614,Karachi,Sindh,South
+2038,S0358,Royal Store 2,,Bronze,5.00,614,Karachi,Sindh,South
+2039,S0359,Rehman Traders 98,2022-03-17,Unknown,5.00,116,Abbottabad,Khyber Pakhtunkhwa,North
+2040,S0360,Lahore Mart 82,2021-03-01,Bronze,4.30,450,Lahore,Punjab,Central
+2041,S0361,Best Bazaar 61,2022-05-12,Bronze,4.20,614,Karachi,Sindh,South
+2042,S0362,Prime Mart 73,2022-03-13,Silver,,535,Faisalabad,Punjab,Central
+2043,S0363,Smart Collection 60,2022-08-20,Gold,4.20,347,Islamabad,Islamabad,North
+2044,S0364,Urban Traders 5,2020-04-18,Bronze,5.00,614,Karachi,Sindh,South
+2045,S0365,REHMAN IMPORTS 15,2023-06-26,Bronze,3.50,347,Islamabad,Islamabad,North
+2046,S0366,Crown Brothers 32,2021-12-16,Bronze,4.50,281,Rawalpindi,Unknown,Central
+2047,S0367,Best Enterprises 72,2022-11-04,Bronze,4.10,456,Quetta,Balochistan,South
+2048,S0368,Al-Noor Hub 23,2023-02-11,Bronze,3.50,144,MariLal,Punjab,Central
+2049,S0369,Al-Noor Mart 93,2022-11-27,Bronze,4.30,115,DeraGola,Sindh,South
+2050,S0370,Metro Solutions 95,2021-03-03,Silver,3.80,116,Abbottabad,Khyber Pakhtunkhwa,North
+2051,S0371,Lahore Brothers 74,2023-03-14,Bronze,,388,GulKhurdMari,Balochistan,South
+2052,S0372,SMART COLLECTION 17,2023-08-20,Bronze,4.60,535,Faisalabad,Punjab,Central
+2053,S0373,Metro Bazaar 12,2022-06-18,Bronze,4.10,464,Jhelum,Punjab,Central
+2054,S0374,Al-Noor Collection 3,2020-05-25,Bronze,3.40,375,PurDeraShah,Sindh,South
+2055,S0375,Lahore Collection 67,2022-03-17,Silver,4.10,450,Lahore,Punjab,Central
+2056,S0376,Habib Store 43,2022-05-26,Silver,4.00,434,Sargodha,Punjab,Central
+2057,S0377,Lahore Hub 44,2020-12-27,Gold,4.00,614,Karachi,Sindh,South
+2058,S0378,Rehman Store 33,2020-05-18,Unknown,4.40,614,Karachi,Sindh,South
+2059,S0379,Star Solutions 68,2021-04-19,Bronze,,337,DeraTandoMari,Punjab,Central
+2060,S0380,Zam Zam Mart 52,2020-12-30,Gold,4.20,450,Lahore,Punjab,Central
+2061,S0381,Royal Traders 33,2023-10-14,Bronze,4.10,443,KhanRah,Khyber Pakhtunkhwa,North
+2062,S0382,Golden Hub 66,2023-08-11,Bronze,3.20,450,Lahore,Punjab,Central
+2063,S0383,Royal Traders 36,2022-12-24,Gold,3.70,347,Islamabad,Islamabad,North
+2064,S0384,Habib Collection 61,2023-08-16,Bronze,4.50,548,Mardan,Khyber Pakhtunkhwa,North
+2065,S0385,Lahore Collection 21,2023-06-06,Bronze,3.30,450,Lahore,Punjab,Central
+2066,S0386,Royal Enterprises 76,2021-07-14,Bronze,3.80,145,Jhang,Punjab,Central
+2067,S0387,Pak Traders 46,2020-03-18,Silver,0.00,86,Peshawar,Khyber Pakhtunkhwa,North
+2068,S0388,Karachi Enterprises 95,2020-12-10,Bronze,3.90,178,Gujrat,Punjab,Central
+2069,S0389,Pak Collection 83,2020-08-13,Bronze,4.10,614,Karachi,Sindh,South
+2070,S0390,Best Traders 74,2022-06-29,Bronze,4.20,426,Hyderabad,Sindh,South
+2071,S0391,Al-Noor Brothers 5,2022-04-14,Silver,4.40,614,Karachi,Sindh,South
+2072,S0392,Smart Imports 82,2020-09-12,Bronze,4.10,468,PurAbad,Balochistan,South
+2073,S0393,Smart Collection 51,2023-06-06,Unknown,,281,Rawalpindi,Unknown,Central
+2074,S0394,Best Enterprises 25,2020-09-11,Bronze,4.10,401,Kasur,Punjab,Central
+2075,S0395,Karachi Store 30,2023-04-21,Bronze,4.70,450,Lahore,Punjab,Central
+2076,S0396,Royal Brothers 12,2020-10-11,Bronze,3.20,178,Gujrat,Punjab,Central
+2077,S0397,Urban Hub 71,2021-07-22,Bronze,4.10,347,Islamabad,Islamabad,North
+2078,S0398,Al-Noor Imports 47,2023-04-12,Bronze,3.80,347,Islamabad,Islamabad,North
+2079,S0399,Golden Solutions 41,2019-12-18,Bronze,4.40,535,Faisalabad,Punjab,Central
+2080,S0400,Al-Noor Store 95,2023-04-27,Bronze,5.00,426,Hyderabad,Sindh,South
+2081,S0401,Smart Traders 82,2022-04-15,Bronze,4.00,281,Rawalpindi,Unknown,Central
+2082,S0402,Urban Store 26,,Silver,3.70,140,MariGul,Punjab,Central
+2083,S0403,Prime Solutions 26,2020-10-30,Bronze,,450,Lahore,Punjab,Central
+2084,S0404,Golden Solutions 48,2023-08-13,Bronze,4.20,86,Peshawar,Khyber Pakhtunkhwa,North
+2085,S0405,Rehman Imports 47,2022-07-08,Bronze,4.40,464,Jhelum,Punjab,Central
+2086,S0406,Best Mart 62,,Gold,,426,Hyderabad,Sindh,South
+2087,S0407,Karachi Hub 95,2023-03-17,Bronze,3.40,570,Larkana,Sindh,South
+2088,S0408,Zam Zam Imports 97,2022-02-25,Bronze,4.10,601,Multan,Punjab,Central
+2089,S0409,Best Collection 54,2022-03-23,Silver,4.30,581,PurPurThal,Unknown,South
+2090,S0410,Zam Zam Traders 91,2023-06-12,Bronze,4.50,347,Islamabad,Islamabad,North
+2091,S0411,Smart Mart 4,2022-03-02,Silver,,281,Rawalpindi,Unknown,Central
+2092,S0412,Best Bazaar 14,2023-01-27,Bronze,4.10,347,Islamabad,Islamabad,North
+2093,S0413,Smart Solutions 98,2021-05-24,Silver,3.80,458,BastiChak,Sindh,South
+2094,S0414,Best Imports 40,,Silver,,597,Gujranwala,Punjab,Central
+2095,S0415,Habib Traders 95,2022-10-13,Silver,4.90,281,Rawalpindi,Unknown,Central
+2096,S0416,Royal Traders 46,2021-03-10,Bronze,4.30,456,Quetta,Balochistan,South
+2097,S0417,Best Brothers 42,,Gold,,86,Peshawar,Khyber Pakhtunkhwa,North
+2098,S0418,Royal Solutions 1,2022-01-27,Bronze,4.50,347,Islamabad,Islamabad,North
+2099,S0419,Smart Mart 74,2023-11-13,Unknown,4.30,630,NagarPurMari,Punjab,Central
+2100,S0420,Royal Store 72,2022-02-21,Bronze,4.10,535,Faisalabad,Punjab,Central

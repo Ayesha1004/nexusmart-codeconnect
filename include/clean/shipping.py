@@ -4,8 +4,10 @@ from __future__ import annotations
 
 import pandas as pd
 
-from .common import Tracker, parse_dates, standardize, to_number
+from .common import Tracker, null_sentinel, parse_dates, standardize, to_number
 from .mappings import COURIER, DELIVERY_STATUS
+
+SHIPPING_FEE_MAX = 5000   # DECISION: above this = error (observed real range 123-4,983)
 
 
 def clean_shipping(df: pd.DataFrame):
@@ -34,10 +36,15 @@ def clean_shipping(df: pd.DataFrame):
     df["shipped_date"], df["delivered_date"] = shipped, delivered.where(~backwards)
 
     fee, bad_fee = to_number(df["shipping_fee"])
-    neg = fee < 0
+    fee, placeholder_fee = null_sentinel(fee)
+    t.repaired("shipping_fee_placeholder_9999999_set_null", placeholder_fee.sum())
+    neg = (fee < 0).fillna(False)
     t.repaired("shipping_fee_negative_set_null", neg.sum())
-    # DECISION (open): 9,145 fees are missing. Left null and flagged; decide whether to impute the
-    # courier median or treat as 0 before building FactSales.ShippingFee.
-    df["shipping_fee"] = fee.where(~neg.fillna(False))
+    too_big = (fee > SHIPPING_FEE_MAX).fillna(False)      # real fees run 123-4,983
+    t.repaired("shipping_fee_above_max_set_null", too_big.sum())
+    # Missing / invalid fees stay null here and are flagged. integrity.py fills them with the typical
+    # fee for an order of the same size (fee grows with order value); the flag stays True so the
+    # filled rows can still be told apart.
+    df["shipping_fee"] = fee.where(~neg & ~too_big)
     df["shipping_fee_missing"] = df["shipping_fee"].isna()
     return t.finish(df)

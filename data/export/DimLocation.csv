@@ -1,0 +1,652 @@
+LocationKey,CityID,City,Province,Region,PopulationTier,Latitude,Longitude
+-1,UNKNOWN,Unknown,Unknown,Unknown,Unknown,,
+2601,1,PurPurPur,Sindh,South,Tier-3,26.1297000,68.2655000
+2602,2,SaraiTandoKot,Punjab,Central,Tier-3,31.3893000,73.2073000
+2603,3,WalaSaraiBasti,Punjab,Central,Tier-3,31.8080000,71.8958000
+2604,4,ShahChakAbad,Balochistan,South,Tier-3,28.2820000,66.0572000
+2605,5,RahKila,Balochistan,South,Tier-3,26.6041000,66.4652000
+2606,6,AliDera,Punjab,Central,Tier-3,32.2888000,72.9269000
+2607,7,KalanMian,Punjab,Central,Tier-3,31.0261000,70.8921000
+2608,8,SaraiJand,Khyber Pakhtunkhwa,North,Tier-3,32.4611000,72.6381000
+2609,9,BastiPur,Sindh,South,Tier-3,24.5463000,67.7110000
+2610,10,BastiJand,Punjab,Central,Tier-3,33.4086000,72.9438000
+2611,11,Khurdshahchak,Punjab,Central,Tier-3,29.5788000,71.6881000
+2612,12,ThalShah,Punjab,Central,Tier-3,32.2368000,71.6100000
+2613,13,GulGarhNagar,Punjab,Central,Tier-3,,72.5210000
+2614,14,BastiKhurdMari,Khyber Pakhtunkhwa,North,Tier-3,31.8650000,73.6102000
+2615,15,GulDeraKhan,Punjab,Central,Tier-3,32.5657000,71.0176000
+2616,16,TandoKalan,Sindh,South,Tier-3,26.1398000,67.3723000
+2617,17,BhalMariAli,Punjab,Central,Tier-3,31.1634000,74.1129000
+2618,18,DhokNau,Punjab,Central,Tier-3,31.3478000,72.0572000
+2619,19,GarhMor,Khyber Pakhtunkhwa,North,Tier-3,33.2409000,70.4242000
+2620,20,AbadGulNagar,Sindh,South,Tier-3,28.0088000,68.0294000
+2621,21,RahBasti,Sindh,South,Tier-3,27.5217000,69.5007000
+2622,22,AbadRah,Punjab,Central,Tier-3,31.9056000,70.5515000
+2623,23,RahMianMian,Punjab,Central,Tier-3,31.5836000,72.1675000
+2624,24,KhurdPind,Balochistan,South,Tier-3,29.8509000,65.1631000
+2625,25,MianKalanGul,Punjab,Central,Tier-3,30.2830000,74.8421000
+2626,26,MianJandTando,Punjab,Central,Tier-3,30.9419000,74.8084000
+2627,27,KhurdBhal,Sindh,South,Tier-3,25.3372000,69.4071000
+2628,28,KilaWalaNagar,Gilgit-Baltistan,North,Tier-3,,
+2629,29,PindWalaJand,Punjab,Central,Tier-3,31.2665000,73.0318000
+2630,30,Sahiwal,Punjab,Central,Tier-3,30.6600000,73.1100000
+2631,31,Bahawalpur,Punjab,Central,Tier-2,29.4000000,71.6800000
+2632,32,RahLalKhurd,Balochistan,South,Tier-3,27.4875000,64.1363000
+2633,33,JandDera,Punjab,Central,Tier-3,31.1239000,71.7598000
+2634,34,PurAli,Punjab,Central,Tier-3,31.7873000,74.4185000
+2635,35,PurMariKalan,Sindh,South,Tier-3,24.9374000,
+2636,36,MorMianGola,Punjab,Central,Tier-3,31.0555000,71.0075000
+2637,37,PurDeraPur,Gilgit-Baltistan,North,Tier-3,,
+2638,38,KhanPind,Sindh,South,Tier-3,24.7886000,67.0184000
+2639,39,Saraikhanrah,Khyber Pakhtunkhwa,North,Tier-3,32.9054000,71.7117000
+2640,40,AliMorBhal,Punjab,Central,Tier-3,30.1907000,75.0431000
+2641,41,TandoBhalLal,Sindh,South,Tier-3,24.8734000,68.7100000
+2642,42,BastiNauKalan,Balochistan,South,Tier-3,28.8891000,66.3020000
+2643,43,GulBastiWala,Balochistan,South,Tier-3,27.8004000,66.8440000
+2644,44,MorPind,Sindh,South,Tier-3,24.7149000,68.8338000
+2645,45,TandoMorLal,Khyber Pakhtunkhwa,North,Tier-3,32.4070000,71.0797000
+2646,46,MianPur,Punjab,Central,Tier-3,31.8705000,73.6351000
+2647,47,KhurdLalGul,Punjab,Central,Tier-3,32.7239000,72.4817000
+2648,48,AliBhal,Punjab,Central,Tier-3,31.8808000,73.3222000
+2649,49,MariGulKila,Punjab,Central,Tier-3,31.2954000,73.2441000
+2650,50,ThalMianGola,Azad Kashmir,North,Tier-3,32.0690000,72.6151000
+2651,51,JandRahBasti,Unknown,Central,Tier-3,31.1875000,75.3599000
+2652,52,KhanKilaRah,Azad Kashmir,North,Tier-3,32.2124000,74.5711000
+2653,53,WalaMari,Punjab,Central,Tier-3,30.3503000,73.1248000
+2654,54,BastiJandKhurd,Punjab,Central,Tier-3,31.5750000,73.4336000
+2655,55,GulBastiLal,Punjab,Central,Tier-3,33.2258000,71.9680000
+2656,56,Kohat,Khyber Pakhtunkhwa,North,Tier-3,33.5900000,71.4400000
+2657,57,TandoLal,Punjab,Central,Tier-3,32.1144000,71.2946000
+2658,58,ThalNauGola,Punjab,Central,Tier-3,33.8760000,72.6928000
+2659,59,ThalTando,Punjab,Central,Tier-3,30.6836000,72.7026000
+2660,60,GolaKotTando,Azad Kashmir,North,Tier-3,34.8815000,73.4519000
+2661,61,PurTandoDhok,Sindh,South,Tier-3,26.0976000,68.8649000
+2662,62,BhalDeraKhurd,Khyber Pakhtunkhwa,North,Tier-3,31.5571000,72.8951000
+2663,63,KalanBhalAbad,Punjab,Central,Tier-3,32.6260000,74.1610000
+2664,64,NagarDhokSarai,Sindh,South,Tier-3,25.4361000,68.5068000
+2665,65,Pindkotnagar,Punjab,Central,Tier-3,31.3693000,73.0792000
+2666,66,ThalWala,Sindh,South,Tier-3,24.9017000,68.2866000
+2667,67,ThalBhalGul,Punjab,Central,Tier-3,29.8357000,72.9442000
+2668,68,TandoNau,Khyber Pakhtunkhwa,North,Tier-3,34.7326000,71.2470000
+2669,69,DeraWalaGola,Balochistan,South,Tier-3,28.4449000,66.3499000
+2670,70,PindDhok,Punjab,Central,Tier-3,30.6196000,71.2835000
+2671,71,ShahTando,Punjab,Central,Tier-3,29.9362000,74.1923000
+2672,72,Aligulbasti,Sindh,South,Tier-3,25.1512000,67.5986000
+2673,73,KilaMor,Sindh,South,Tier-3,26.3903000,67.5000000
+2674,74,BastiAbad,Sindh,South,Tier-3,26.3563000,69.9215000
+2675,75,KalanThalWala,Punjab,Central,Tier-3,32.6330000,72.5850000
+2676,76,NagarJand,Balochistan,South,Tier-3,28.7038000,65.8770000
+2677,77,GarhRah,Sindh,South,Tier-3,27.7624000,
+2678,78,MariBhalMari,Punjab,Central,Tier-3,31.0515000,73.7659000
+2679,79,KhanRahGarh,Punjab,Central,Tier-3,28.7588000,71.8914000
+2680,80,GolaAbad,Punjab,Central,Tier-3,31.3398000,73.6646000
+2681,81,GarhNagar,Unknown,North,Tier-3,34.3235000,70.1364000
+2682,82,MorGola,Unknown,North,Tier-3,31.7528000,71.8385000
+2683,83,ChakBhalPur,Sindh,South,Tier-3,27.0778000,68.5645000
+2684,84,GolaShahSarai,Khyber Pakhtunkhwa,North,Tier-3,32.4838000,71.4223000
+2685,85,GarhThalKalan,Sindh,South,Tier-3,25.2959000,69.4300000
+2686,86,Peshawar,Khyber Pakhtunkhwa,North,Unknown,34.0100000,71.5800000
+2687,87,JandRahRah,Sindh,South,Tier-3,26.7316000,67.9137000
+2688,88,NauKhan,Unknown,Central,Tier-3,29.6107000,70.8638000
+2689,89,AliMian,Sindh,South,Tier-3,27.3039000,68.7901000
+2690,90,KhanGulGul,Punjab,Central,Tier-3,32.1002000,71.8740000
+2691,91,KhanRahAli,Punjab,Central,Tier-3,30.4857000,71.1927000
+2692,92,DhokAliMari,Punjab,Central,Tier-3,29.4532000,71.9529000
+2693,93,KotWala,Sindh,South,Tier-3,26.4715000,71.0520000
+2694,94,LalAbad,Azad Kashmir,North,Tier-3,34.2313000,70.9208000
+2695,95,GulMari,Punjab,Central,Tier-3,29.0844000,73.3564000
+2696,96,BastiNauJand,Khyber Pakhtunkhwa,North,Tier-3,34.1379000,71.4565000
+2697,97,ChakNau,Khyber Pakhtunkhwa,North,Tier-3,32.7626000,71.8865000
+2698,98,SaraiTandoSarai,Punjab,Central,Tier-3,30.4464000,71.9090000
+2699,99,KalanNau,Sindh,South,Tier-3,27.5178000,67.0240000
+2700,100,Lalsaraimari,Azad Kashmir,North,Tier-3,35.2058000,74.7108000
+2701,101,KhanShah,Punjab,Central,Tier-3,31.8045000,
+2702,102,BastiPurBasti,Punjab,Central,Tier-3,30.0191000,70.5577000
+2703,103,Gwadar,Balochistan,South,Tier-3,25.1200000,62.3300000
+2704,104,KotKot,Punjab,Central,Tier-3,,73.0728000
+2705,105,KotChak,Balochistan,South,Tier-3,27.6452000,65.9251000
+2706,106,PindKalanPind,Punjab,Central,Tier-3,31.6327000,74.0830000
+2707,107,ChakPur,Punjab,Central,Tier-3,30.6633000,
+2708,108,AliChakAli,Khyber Pakhtunkhwa,North,Tier-3,34.4554000,70.5584000
+2709,109,Jacobabad,Sindh,South,Tier-3,28.2800000,68.4400000
+2710,110,GarhThalWala,Sindh,South,Tier-3,,68.8283000
+2711,111,GolaRah,Punjab,Central,Tier-3,28.8036000,71.9299000
+2712,112,GarhNauKalan,Punjab,Central,Tier-3,30.9535000,75.4157000
+2713,113,PurPind,Punjab,Central,Tier-3,31.3560000,73.2535000
+2714,114,SaraiLalBasti,Punjab,Central,Tier-3,30.7748000,70.7749000
+2715,115,DeraGola,Sindh,South,Tier-3,25.4133000,68.7459000
+2716,116,Abbottabad,Khyber Pakhtunkhwa,North,Tier-2,34.1500000,73.2100000
+2717,117,NauMari,Unknown,Central,Tier-3,31.0974000,73.0931000
+2718,118,ShahGarhDera,Punjab,Central,Tier-3,30.8284000,73.8677000
+2719,119,NauGola,Punjab,Central,Tier-3,30.9304000,72.7155000
+2720,120,ChakGul,Punjab,Central,Tier-3,,74.0336000
+2721,121,MorKalan,Unknown,South,Tier-3,25.7894000,70.4803000
+2722,122,KhurdKhurd,Khyber Pakhtunkhwa,North,Tier-3,32.6544000,73.5062000
+2723,123,DhokTando,Sindh,South,Tier-3,25.3402000,69.9373000
+2724,124,KalanDera,Punjab,Central,Tier-3,31.8014000,74.4381000
+2725,125,KalanPindGarh,Punjab,Central,Tier-3,30.1433000,75.9710000
+2726,126,PindRah,Sindh,South,Tier-3,26.4056000,67.7943000
+2727,127,DhokAbad,Khyber Pakhtunkhwa,North,Tier-3,36.2294000,70.5775000
+2728,128,LalPindDera,Punjab,Central,Tier-3,31.2628000,
+2729,129,DhokPindChak,Sindh,South,Tier-3,24.6012000,69.9190000
+2730,130,Kilatando,Punjab,Central,Tier-3,32.0714000,73.3593000
+2731,131,BastiGarhGola,Punjab,Central,Tier-3,29.6087000,71.5341000
+2732,132,NauSaraiShah,Sindh,South,Tier-3,24.8139000,66.8848000
+2733,133,WalaThalDera,Punjab,Central,Tier-3,29.5551000,72.6780000
+2734,134,NagarShahBasti,Sindh,South,Tier-3,24.1171000,68.8405000
+2735,135,KhurdKalan,Punjab,Central,Tier-3,,71.0909000
+2736,136,Bhalkot,Punjab,Central,Tier-3,27.1950000,72.7773000
+2737,137,MariKalan,Sindh,South,Tier-3,23.7699000,66.8053000
+2738,138,BhalTando,Sindh,South,Tier-3,27.2668000,70.5264000
+2739,139,DhokDeraDera,Punjab,Central,Tier-3,29.0933000,72.7199000
+2740,140,MariGul,Punjab,Central,Tier-3,30.8485000,73.4392000
+2741,141,GulThalKalan,Punjab,Central,Tier-3,32.4394000,73.1842000
+2742,142,MorAli,Khyber Pakhtunkhwa,North,Tier-3,34.0282000,72.3875000
+2743,143,MorShahAli,Punjab,Central,Tier-3,31.8747000,72.2357000
+2744,144,MariLal,Punjab,Central,Tier-3,31.7718000,
+2745,145,Jhang,Punjab,Central,Tier-3,31.2700000,72.3200000
+2746,146,NagarGarh,Sindh,South,Tier-3,26.2393000,67.2143000
+2747,147,ThalShahPind,Balochistan,South,Tier-3,29.0107000,66.5391000
+2748,148,GarhMariMian,Punjab,Central,Tier-3,,70.6304000
+2749,149,RahAliGul,Punjab,Central,Tier-3,30.2949000,72.1228000
+2750,150,ChakBasti,Khyber Pakhtunkhwa,North,Tier-3,34.6503000,71.2149000
+2751,151,MorDhok,Sindh,South,Tier-3,24.9493000,69.1641000
+2752,152,KotDhokRah,Punjab,Central,Tier-3,30.3732000,
+2753,153,NagarKila,Punjab,Central,Tier-3,32.1246000,73.1740000
+2754,154,KotGulMari,Sindh,South,Tier-3,24.9427000,68.0522000
+2755,155,ShahJand,Balochistan,South,Tier-3,28.6663000,65.7136000
+2756,156,NauPindGarh,Sindh,South,Tier-3,,69.2974000
+2757,157,AbadAli,Sindh,South,Tier-3,28.1584000,65.8573000
+2758,158,GarhMari,Sindh,South,Tier-3,25.5815000,68.0324000
+2759,159,NauAli,Punjab,Central,Tier-3,30.3669000,72.1088000
+2760,160,KhurdKalanThal,Balochistan,South,Tier-3,30.2085000,66.8318000
+2761,161,NauBhalKhan,Balochistan,South,Tier-3,30.0018000,
+2762,162,DhokNauBhal,Punjab,Central,Tier-3,31.0191000,70.7638000
+2763,163,KilaGarhPind,Punjab,Central,Tier-3,32.7549000,74.6648000
+2764,164,NauKalanPind,Balochistan,South,Tier-3,28.8479000,64.8484000
+2765,165,MorKhanMor,Sindh,South,Tier-3,25.7741000,67.4773000
+2766,166,MariGola,Sindh,South,Tier-3,25.4907000,68.5801000
+2767,167,ShahKot,Punjab,Central,Tier-3,32.5049000,72.9565000
+2768,168,MorDera,Sindh,South,Tier-3,26.6443000,70.1510000
+2769,169,Pindabad,Punjab,Central,Tier-3,30.0175000,70.6414000
+2770,170,KilaBastiLal,Khyber Pakhtunkhwa,North,Tier-3,34.4556000,70.5583000
+2771,171,KilaChakKila,Sindh,South,Tier-3,,68.6995000
+2772,172,NagarKhan,Punjab,Central,Tier-3,32.4884000,71.1213000
+2773,173,GulShahAbad,Balochistan,South,Tier-3,,66.8451000
+2774,174,ChakMian,Sindh,South,Tier-3,23.8871000,68.1418000
+2775,175,WalaWala,Balochistan,South,Tier-3,28.8768000,61.9669000
+2776,176,ShahBastiGola,Balochistan,South,Tier-3,28.1969000,62.9866000
+2777,177,Kalankot,Punjab,Central,Tier-3,29.7970000,73.6973000
+2778,178,Gujrat,Punjab,Central,Tier-3,32.5700000,74.0800000
+2779,179,KhurdGulGul,Sindh,South,Tier-3,25.3335000,66.7535000
+2780,180,Khantandowala,Punjab,Central,Tier-3,29.7644000,73.4515000
+2781,181,MianJand,Azad Kashmir,North,Tier-3,35.5822000,74.5413000
+2782,182,TandoNagar,Punjab,Central,Tier-3,,71.6402000
+2783,183,KalanDhok,Khyber Pakhtunkhwa,North,Tier-3,34.2505000,72.0669000
+2784,184,NagarBasti,Unknown,Central,Tier-3,32.6465000,73.2381000
+2785,185,KhanMian,Punjab,Central,Tier-3,30.5738000,73.2528000
+2786,186,LalPindMian,Punjab,Central,Tier-3,29.3550000,72.1601000
+2787,187,PurDera,Punjab,Central,Tier-3,32.9833000,72.0087000
+2788,188,NagarThalNau,Azad Kashmir,North,Tier-3,36.0482000,75.0807000
+2789,189,DeraKalanJand,Punjab,Central,Tier-3,31.7694000,71.1190000
+2790,190,ThalNauSarai,Punjab,Central,Tier-3,29.6436000,73.7771000
+2791,191,KhurdKilaMor,Punjab,Central,Tier-3,31.6776000,72.4299000
+2792,192,MianAliJand,Sindh,South,Tier-3,24.9759000,
+2793,193,KalanDeraKhurd,Punjab,Central,Tier-3,30.0252000,
+2794,194,JandJandBhal,Punjab,Central,Tier-3,28.1103000,73.7192000
+2795,195,GarhAli,Punjab,Central,Tier-3,31.0274000,71.1434000
+2796,196,LalChakGola,Khyber Pakhtunkhwa,North,Tier-3,33.1427000,71.9292000
+2797,197,MariDhokLal,Punjab,Central,Tier-3,30.8917000,73.4800000
+2798,198,Sheikhupura,Punjab,Central,Tier-3,31.7100000,73.9800000
+2799,199,PurTando,Khyber Pakhtunkhwa,North,Tier-3,35.5220000,71.3817000
+2800,200,ChakThalPind,Khyber Pakhtunkhwa,North,Tier-3,34.2745000,70.6305000
+2801,201,ChakPindMor,Sindh,South,Tier-3,24.5833000,67.6176000
+2802,202,DeraPurJand,Balochistan,South,Tier-3,27.1531000,64.1556000
+2803,203,WalaBastiChak,Punjab,Central,Tier-3,32.3355000,70.8943000
+2804,204,DeraBhal,Sindh,South,Tier-3,,68.8932000
+2805,205,MianNagarDhok,Punjab,Central,Tier-3,31.3108000,72.8089000
+2806,206,MariBhalChak,Punjab,Central,Tier-3,32.4987000,72.5256000
+2807,207,KhanAli,Punjab,Central,Tier-3,29.7454000,71.9472000
+2808,208,GarhPurSarai,Punjab,Central,Tier-3,30.7696000,70.5070000
+2809,209,Rahnagarnau,Punjab,Central,Tier-3,32.2280000,73.7344000
+2810,210,JandKila,Punjab,Central,Tier-3,29.4675000,74.5928000
+2811,211,BhalGola,Punjab,Central,Tier-3,29.0723000,72.1161000
+2812,212,ShahSarai,Sindh,South,Tier-3,24.9671000,68.7755000
+2813,213,MorKhurd,Punjab,Central,Tier-3,32.4468000,73.7644000
+2814,214,TandoThal,Khyber Pakhtunkhwa,North,Tier-3,,71.2598000
+2815,215,NauGarhThal,Punjab,Central,Tier-3,,
+2816,216,NauPurKalan,Khyber Pakhtunkhwa,North,Tier-3,36.5005000,71.9008000
+2817,217,LalDera,Punjab,Central,Tier-3,30.0349000,74.2589000
+2818,218,KotPindPind,Sindh,South,Tier-3,27.0257000,69.7994000
+2819,219,JandBhal,Punjab,Central,Tier-3,31.2932000,72.2865000
+2820,220,JandChakGarh,Punjab,Central,Tier-3,32.1465000,73.7918000
+2821,221,ThalPur,Punjab,Central,Tier-3,30.2288000,
+2822,222,GolaDhok,Punjab,Central,Tier-3,32.8757000,73.1374000
+2823,223,PindDeraLal,Sindh,South,Tier-3,26.3769000,69.5037000
+2824,224,Derakhurdkila,Sindh,South,Tier-3,25.5615000,67.2276000
+2825,225,GarhAbadTando,Balochistan,South,Tier-3,28.5804000,64.7726000
+2826,226,GolaShahBasti,Khyber Pakhtunkhwa,North,Tier-3,34.2089000,71.3008000
+2827,227,AliKhan,Punjab,Central,Tier-3,31.9637000,73.0265000
+2828,228,MariAliRah,Unknown,North,Tier-3,35.1336000,70.8299000
+2829,229,MorNagar,Khyber Pakhtunkhwa,North,Tier-3,33.7967000,74.8361000
+2830,230,LalMari,Punjab,Central,Tier-3,29.8803000,72.0736000
+2831,231,GulDera,Punjab,Central,Tier-3,31.4615000,72.6691000
+2832,232,MorGul,Khyber Pakhtunkhwa,North,Tier-3,33.5035000,71.7749000
+2833,233,MorMor,Punjab,Central,Tier-3,31.6105000,74.5687000
+2834,234,WalaChak,Punjab,Central,Tier-3,33.1223000,72.3153000
+2835,235,DhokKhanLal,Khyber Pakhtunkhwa,North,Tier-3,33.8052000,71.7095000
+2836,236,KhanLal,Sindh,South,Tier-3,24.7061000,70.7342000
+2837,237,RahLalRah,Punjab,Central,Tier-3,31.0434000,71.2507000
+2838,238,MariPurAbad,Balochistan,South,Tier-3,,65.4640000
+2839,239,BhalPur,Punjab,Central,Tier-3,30.3043000,72.0917000
+2840,240,DeraLalKhurd,Khyber Pakhtunkhwa,North,Tier-3,33.0081000,72.9886000
+2841,241,PurChakDera,Khyber Pakhtunkhwa,North,Tier-3,34.9771000,72.9856000
+2842,242,DhokGulMian,Punjab,Central,Tier-3,32.0135000,70.3955000
+2843,243,ThalMian,Balochistan,South,Tier-3,26.0277000,66.3630000
+2844,244,ChakGarh,Khyber Pakhtunkhwa,North,Tier-3,33.9122000,
+2845,245,ShahKhurd,Sindh,South,Tier-3,27.1294000,68.6451000
+2846,246,NagarChak,Khyber Pakhtunkhwa,North,Tier-3,33.4664000,73.2212000
+2847,247,GarhTando,Punjab,Central,Tier-3,30.2064000,71.5097000
+2848,248,ThalSaraiDhok,Punjab,Central,Tier-3,,73.3172000
+2849,249,NauThalTando,Gilgit-Baltistan,North,Tier-3,34.8017000,75.7053000
+2850,250,MariMianKhurd,Punjab,Central,Tier-3,30.4185000,73.2399000
+2851,251,BastiGola,Punjab,Central,Tier-3,31.5498000,72.0073000
+2852,252,ThalKhurd,Khyber Pakhtunkhwa,North,Tier-3,32.9191000,71.8071000
+2853,253,DhokKhanMian,Punjab,Central,Tier-3,31.7635000,73.5595000
+2854,254,KotThalGola,Punjab,Central,Tier-3,30.5945000,72.9058000
+2855,255,GolaLalShah,Punjab,Central,Tier-3,29.1500000,
+2856,256,Turbat,Balochistan,South,Tier-3,26.0000000,63.0500000
+2857,257,KhurdAli,Punjab,Central,Tier-3,30.1960000,72.7916000
+2858,258,DeraBastiPur,Punjab,Central,Tier-3,31.8776000,73.5257000
+2859,259,ChakKalanNagar,Sindh,South,Tier-3,26.3287000,69.0735000
+2860,260,DeraWala,Balochistan,South,Tier-3,28.1272000,
+2861,261,JandBhalWala,Punjab,Central,Tier-3,33.1924000,74.4456000
+2862,262,WalaAbad,Punjab,Central,Tier-3,31.9951000,72.2121000
+2863,263,WalaMorKila,Punjab,Central,Tier-3,33.6142000,72.2032000
+2864,264,GolaAbadNagar,Punjab,Central,Tier-3,31.3425000,71.6945000
+2865,265,DhokMian,Punjab,Central,Tier-3,32.5319000,73.8065000
+2866,266,AbadJandDera,Sindh,South,Tier-3,27.6543000,69.2298000
+2867,267,WalaKot,Punjab,Central,Tier-3,30.3050000,72.9242000
+2868,268,MianAliWala,Sindh,South,Tier-3,23.7049000,69.2911000
+2869,269,KilaPur,Unknown,South,Tier-3,25.6959000,67.7296000
+2870,270,GolaTando,Punjab,Central,Tier-3,30.0288000,72.7278000
+2871,271,NauThalMor,Sindh,South,Tier-3,25.7962000,67.8579000
+2872,272,KalanTando,Balochistan,South,Tier-3,27.6892000,64.2854000
+2873,273,WalaBastiPind,Punjab,Central,Tier-3,31.8948000,
+2874,274,BastiMianPur,Khyber Pakhtunkhwa,North,Tier-3,34.7980000,72.7518000
+2875,275,KhanGarhKalan,Khyber Pakhtunkhwa,North,Tier-3,35.7342000,72.4449000
+2876,276,AliThalShah,Khyber Pakhtunkhwa,North,Tier-3,33.7775000,72.1129000
+2877,277,DhokGarh,Sindh,South,Tier-3,25.9099000,68.7388000
+2878,278,KalanKilaMari,Punjab,Central,Tier-3,30.8535000,71.3763000
+2879,279,KilaAliKhan,Khyber Pakhtunkhwa,North,Tier-3,33.9079000,71.3836000
+2880,280,GarhGulPind,Punjab,Central,Tier-3,30.0271000,72.0946000
+2881,281,Rawalpindi,Unknown,Central,Unknown,33.6000000,73.0400000
+2882,282,KilaBhal,Unknown,Central,Tier-3,31.0963000,73.0656000
+2883,283,Muzaffarabad,Azad Kashmir,North,Tier-3,,73.4700000
+2884,284,RahNagarGola,Gilgit-Baltistan,North,Tier-3,35.5872000,73.8289000
+2885,285,PindDeraNau,Khyber Pakhtunkhwa,North,Tier-3,36.2900000,
+2886,286,NauLal,Sindh,South,Tier-3,25.0072000,69.3544000
+2887,287,WalaLalAbad,Punjab,Central,Tier-3,31.5008000,69.9583000
+2888,288,MariMian,Khyber Pakhtunkhwa,North,Tier-3,34.9974000,71.9874000
+2889,289,KalanJandKot,Punjab,Central,Tier-3,32.6590000,73.6880000
+2890,290,RahDhokDera,Sindh,South,Tier-3,27.5201000,68.3946000
+2891,291,Dera Ismail Khan,Khyber Pakhtunkhwa,North,Tier-3,31.8300000,70.9000000
+2892,292,AbadBasti,Punjab,Central,Tier-3,30.5412000,73.4551000
+2893,293,ShahAliMor,Khyber Pakhtunkhwa,North,Tier-3,33.4218000,70.8887000
+2894,294,GulKilaMari,Unknown,Central,Tier-3,33.0508000,74.3579000
+2895,295,MorMorChak,Punjab,Central,Tier-3,30.1277000,72.4499000
+2896,296,RahBhalShah,Unknown,North,Tier-3,32.1288000,70.9635000
+2897,297,KhanBhal,Sindh,South,Tier-3,24.5536000,68.9963000
+2898,298,GarhBhal,Khyber Pakhtunkhwa,North,Tier-3,33.2688000,72.3546000
+2899,299,TandoSarai,Sindh,South,Tier-3,25.5532000,67.6738000
+2900,300,PindPindJand,Sindh,South,Tier-3,26.9275000,69.5501000
+2901,301,BhalRah,Unknown,South,Tier-3,31.5086000,64.6509000
+2902,302,DhokLalBasti,Punjab,Central,Tier-3,31.1628000,72.0806000
+2903,303,MariGarhKot,Punjab,Central,Tier-3,32.8857000,73.2399000
+2904,304,LalJand,Khyber Pakhtunkhwa,North,Tier-3,32.3426000,74.0675000
+2905,305,BastiMariBhal,Punjab,Central,Tier-3,31.3350000,72.3449000
+2906,306,NagarGarhKhan,Punjab,Central,Tier-3,31.9945000,72.3530000
+2907,307,AliGolaDhok,Gilgit-Baltistan,North,Tier-3,34.2485000,74.3861000
+2908,308,PurBhalRah,Punjab,Central,Tier-3,31.1242000,72.6807000
+2909,309,ShahRah,Punjab,Central,Tier-3,31.7077000,73.1692000
+2910,310,BhalMariAbad,Sindh,South,Tier-3,25.7955000,65.0307000
+2911,311,KhanWala,Balochistan,South,Tier-3,,65.2850000
+2912,312,ChakKhurdGul,Punjab,Central,Tier-3,31.5008000,70.6479000
+2913,313,ThalBastiWala,Punjab,Central,Tier-3,31.6766000,72.9737000
+2914,314,ChakSaraiMari,Khyber Pakhtunkhwa,North,Tier-3,,71.5576000
+2915,315,LalBasti,Sindh,South,Tier-3,25.3627000,69.1809000
+2916,316,BastiThal,Punjab,Central,Tier-3,34.1172000,73.0102000
+2917,317,GarhKotRah,Punjab,Central,Tier-3,32.8749000,73.6660000
+2918,318,ThalGarh,Balochistan,South,Tier-3,27.7031000,65.2648000
+2919,319,ThalKot,Sindh,South,Tier-3,25.8702000,68.6648000
+2920,320,LalRah,Balochistan,South,Tier-3,27.3038000,66.3644000
+2921,321,DeraDhok,Punjab,Central,Tier-3,31.5110000,72.4140000
+2922,322,BhalChakJand,Balochistan,South,Tier-3,30.1552000,65.2856000
+2923,323,BastiShahRah,Punjab,Central,Tier-3,29.6185000,74.1080000
+2924,324,RahDhok,Punjab,Central,Tier-3,32.2695000,74.5572000
+2925,325,GarhShah,Sindh,South,Tier-3,25.4896000,69.5600000
+2926,326,DhokKhurd,Punjab,Central,Tier-3,32.0343000,71.6859000
+2927,327,PurGarhMari,Sindh,South,Tier-3,26.1873000,66.9349000
+2928,328,KhanKotRah,Khyber Pakhtunkhwa,North,Tier-3,32.9811000,74.1811000
+2929,329,Bannu,Khyber Pakhtunkhwa,North,Tier-3,32.9900000,70.6000000
+2930,330,RahGola,Sindh,South,Tier-3,25.7519000,67.4894000
+2931,331,ThalAli,Punjab,Central,Tier-3,32.7568000,71.7883000
+2932,332,PurKila,Punjab,Central,Tier-3,29.8794000,70.3477000
+2933,333,DhokBhalMian,Khyber Pakhtunkhwa,North,Tier-3,34.1046000,72.9468000
+2934,334,Khurdpurtando,Punjab,Central,Tier-3,30.6688000,72.8740000
+2935,335,GarhKalanKot,Sindh,South,Tier-3,25.7594000,70.0860000
+2936,336,KhanSarai,Khyber Pakhtunkhwa,North,Tier-3,34.6412000,72.8194000
+2937,337,DeraTandoMari,Punjab,Central,Tier-3,30.9749000,72.0253000
+2938,338,ChakMorKalan,Punjab,Central,Tier-3,32.6983000,74.9756000
+2939,339,MorShahKhurd,Sindh,South,Tier-3,27.6129000,70.5053000
+2940,340,RahPur,Punjab,Central,Tier-3,31.4169000,74.4966000
+2941,341,DeraGul,Khyber Pakhtunkhwa,North,Tier-3,33.8275000,72.4811000
+2942,342,NagarGola,Punjab,Central,Tier-3,32.4419000,72.5607000
+2943,343,KilaGola,Sindh,South,Tier-3,24.9519000,68.2216000
+2944,344,GulPurJand,Sindh,South,Tier-3,23.8802000,68.4212000
+2945,345,GolaBastiPind,Punjab,Central,Tier-3,33.2751000,71.9742000
+2946,346,Rahim Yar Khan,Punjab,Central,Tier-3,28.4200000,70.3000000
+2947,347,Islamabad,Islamabad,North,Unknown,33.6800000,73.0500000
+2948,348,AbadPindSarai,Punjab,Central,Tier-3,31.6426000,71.1300000
+2949,349,DeraDeraDhok,Punjab,Central,Tier-3,29.5111000,74.1487000
+2950,350,MariRahBasti,Khyber Pakhtunkhwa,North,Tier-3,34.6055000,70.2925000
+2951,351,BastiKhurdNagar,Sindh,South,Tier-3,25.3654000,67.8705000
+2952,352,MariWala,Khyber Pakhtunkhwa,North,Tier-3,,
+2953,353,SaraiLalPur,Punjab,Central,Tier-3,27.6785000,72.3036000
+2954,354,WalaJand,Khyber Pakhtunkhwa,North,Tier-3,,
+2955,355,LalLalAli,Punjab,Central,Tier-3,31.1788000,73.5990000
+2956,356,KotGarh,Punjab,Central,Tier-3,30.4787000,72.1805000
+2957,357,NauGolaRah,Sindh,South,Tier-3,24.4519000,68.7276000
+2958,358,PindGarhGarh,Sindh,South,Tier-3,26.1482000,
+2959,359,LalChakKhan,Sindh,South,Tier-3,,68.7076000
+2960,360,ChakMari,Punjab,Central,Tier-3,32.3717000,73.1596000
+2961,361,GulGarh,Sindh,South,Tier-3,24.2854000,68.2846000
+2962,362,MariChakGul,Punjab,Central,Tier-3,31.4828000,74.2320000
+2963,363,PurDhok,Sindh,South,Tier-3,26.2523000,69.7294000
+2964,364,DhokKhan,Unknown,Central,Tier-3,30.1730000,71.3468000
+2965,365,GarhNagarTando,Balochistan,South,Tier-3,29.9350000,65.3811000
+2966,366,KotBhal,Khyber Pakhtunkhwa,North,Tier-3,33.2650000,71.7981000
+2967,367,RahMariSarai,Punjab,Central,Tier-3,31.1600000,73.1175000
+2968,368,DhokDhokAli,Sindh,South,Tier-3,24.6286000,67.6304000
+2969,369,ThalKalan,Sindh,South,Tier-3,25.0861000,69.5746000
+2970,370,KalanPur,Punjab,Central,Tier-3,31.7455000,73.0508000
+2971,371,Gilgit,Gilgit-Baltistan,North,Tier-3,35.9200000,74.3100000
+2972,372,TandoLalLal,Sindh,South,Tier-3,25.9981000,67.8911000
+2973,373,ThalMianMian,Khyber Pakhtunkhwa,North,Tier-3,34.8474000,70.5848000
+2974,374,AliJand,Punjab,Central,Tier-3,32.7083000,73.4423000
+2975,375,PurDeraShah,Sindh,South,Tier-3,24.3417000,67.5638000
+2976,376,MianAbad,Balochistan,South,Tier-3,28.9255000,66.1851000
+2977,377,Chiniot,Punjab,Central,Tier-3,31.7200000,72.9800000
+2978,378,AbadKot,Sindh,South,Tier-3,25.5735000,69.0897000
+2979,379,Mingora,Khyber Pakhtunkhwa,North,Tier-3,34.7700000,72.3600000
+2980,380,PurLal,Punjab,Central,Tier-3,30.1569000,72.1882000
+2981,381,GulSarai,Khyber Pakhtunkhwa,North,Tier-3,32.5397000,72.1036000
+2982,382,NauSarai,Khyber Pakhtunkhwa,North,Tier-3,33.7750000,70.9598000
+2983,383,GolaKilaMian,Punjab,Central,Tier-3,31.8408000,71.3052000
+2984,384,ShahMianAbad,Sindh,South,Tier-3,27.2011000,70.4228000
+2985,385,Walarah,Punjab,Central,Tier-3,,74.3025000
+2986,386,ShahThalMor,Balochistan,South,Tier-3,28.0528000,67.1354000
+2987,387,KalanDhokGul,Balochistan,South,Tier-3,27.4941000,64.9788000
+2988,388,GulKhurdMari,Balochistan,South,Tier-3,28.4502000,65.6031000
+2989,389,MariKhanDhok,Punjab,Central,Tier-3,30.9063000,74.0529000
+2990,390,PurThalMian,Khyber Pakhtunkhwa,North,Tier-3,33.3138000,71.1797000
+2991,391,Sibi,Balochistan,South,Tier-3,29.5400000,67.8800000
+2992,392,Mirpur,Unknown,North,Tier-3,33.1500000,73.7500000
+2993,393,NagarMian,Unknown,North,Tier-3,32.9735000,69.6820000
+2994,394,Attock,Punjab,Central,Tier-3,33.7700000,72.3600000
+2995,395,Skardu,Gilgit-Baltistan,North,Tier-3,,75.6300000
+2996,396,NauShahGarh,Azad Kashmir,North,Tier-3,33.4081000,72.9543000
+2997,397,Dhokpindmor,Sindh,South,Tier-3,27.0286000,69.2663000
+2998,398,MianKhurd,Punjab,Central,Tier-3,,75.5202000
+2999,399,KotAliNau,Sindh,South,Tier-3,25.1145000,69.0948000
+3000,400,SaraiNagarKalan,Unknown,North,Tier-3,36.8743000,75.2974000
+3001,401,Kasur,Punjab,Central,Tier-3,31.1200000,74.4500000
+3002,402,ThalThalNau,Punjab,Central,Tier-3,29.5703000,72.1686000
+3003,403,AliPur,Punjab,Central,Tier-3,30.7080000,72.3768000
+3004,404,BhalWala,Balochistan,South,Tier-3,,66.5291000
+3005,405,WalaAli,Sindh,South,Tier-3,27.2846000,70.1140000
+3006,406,RahChak,Sindh,South,Tier-3,25.4799000,67.8174000
+3007,407,NagarKotKila,Punjab,Central,Tier-3,29.5488000,72.9922000
+3008,408,DeraKalanKhan,Khyber Pakhtunkhwa,North,Tier-3,32.2197000,70.1488000
+3009,409,Sukkur,Sindh,South,Tier-2,27.7000000,68.8600000
+3010,410,NagarNauBhal,Sindh,South,Tier-3,26.9496000,68.0914000
+3011,411,Khurddhok,Sindh,South,Tier-3,28.3951000,67.0395000
+3012,412,AbadDhokKila,Khyber Pakhtunkhwa,North,Tier-3,32.5977000,71.9273000
+3013,413,DhokMor,Punjab,Central,Tier-3,30.8637000,72.4950000
+3014,414,ThalThalThal,Gilgit-Baltistan,North,Tier-3,,
+3015,415,AliChakNau,Punjab,Central,Tier-3,29.7121000,73.0034000
+3016,416,GolaGulBasti,Khyber Pakhtunkhwa,North,Tier-3,32.1967000,70.2465000
+3017,417,Gulwala,Sindh,South,Tier-3,25.5043000,71.2966000
+3018,418,KalanNagar,Sindh,South,Tier-3,25.7749000,67.7991000
+3019,419,PurMariJand,Balochistan,South,Tier-3,25.4607000,64.6717000
+3020,420,MianThal,Sindh,South,Tier-3,26.2329000,67.9561000
+3021,421,SaraiWala,Sindh,South,Tier-3,25.0714000,69.0034000
+3022,422,AliKot,Balochistan,South,Tier-3,28.2312000,66.4501000
+3023,423,KotPurKot,Sindh,South,Tier-3,26.3019000,66.3603000
+3024,424,MianMor,Khyber Pakhtunkhwa,North,Tier-3,34.3895000,73.2988000
+3025,425,GulGul,Punjab,Central,Tier-3,31.0824000,72.8603000
+3026,426,Hyderabad,Sindh,South,Tier-2,25.3900000,68.3700000
+3027,427,BhalRahBhal,Punjab,Central,Tier-3,31.2823000,72.2258000
+3028,428,JandChak,Balochistan,South,Tier-3,29.1681000,65.5918000
+3029,429,GolaMariBhal,Punjab,Central,Tier-3,31.5694000,
+3030,430,RahGul,Punjab,Central,Tier-3,31.9861000,73.8232000
+3031,431,ChakTando,Gilgit-Baltistan,North,Tier-3,34.4948000,73.6704000
+3032,432,GarhShahPur,Punjab,Central,Tier-3,28.4890000,72.8614000
+3033,433,WalaShah,Balochistan,South,Tier-3,29.4060000,66.3049000
+3034,434,Sargodha,Punjab,Central,Tier-2,32.0800000,72.6700000
+3035,435,KalanKhurdKalan,Azad Kashmir,North,Tier-3,34.9420000,74.3092000
+3036,436,NagarNagar,Punjab,Central,Tier-3,29.1625000,73.1131000
+3037,437,MorLalNau,Punjab,Central,Tier-3,32.9681000,72.0247000
+3038,438,AliWalaLal,Punjab,Central,Tier-3,31.2088000,72.2405000
+3039,439,KhanMariThal,Sindh,South,Tier-3,,68.2289000
+3040,440,ThalKotAbad,Khyber Pakhtunkhwa,North,Tier-3,33.7729000,71.6364000
+3041,441,NagarMari,Punjab,Central,Tier-3,32.5429000,74.0940000
+3042,442,TandoJand,Unknown,Central,Tier-3,32.1836000,74.7336000
+3043,443,KhanRah,Khyber Pakhtunkhwa,North,Tier-3,31.9665000,72.7077000
+3044,444,PindGola,Sindh,South,Tier-3,27.0948000,69.3501000
+3045,445,ChakSaraiBasti,Sindh,South,Tier-3,23.5417000,67.4193000
+3046,446,PindNau,Punjab,Central,Tier-3,30.9646000,
+3047,447,RahPindJand,Sindh,South,Tier-3,24.8890000,68.6362000
+3048,448,ThalPurPind,Punjab,Central,Tier-3,29.7883000,71.1693000
+3049,449,WalaDhok,Punjab,Central,Tier-3,31.4461000,73.1576000
+3050,450,Lahore,Punjab,Central,Unknown,31.5200000,74.3600000
+3051,451,TandoDeraGul,Punjab,Central,Tier-3,31.2512000,74.0833000
+3052,452,BhalChak,Punjab,Central,Tier-3,31.4176000,74.1221000
+3053,453,Khuzdar,Balochistan,South,Tier-3,27.8100000,66.6200000
+3054,454,AliSaraiLal,Balochistan,South,Tier-3,27.3875000,67.4431000
+3055,455,PindGulDera,Punjab,Central,Tier-3,29.8461000,71.9754000
+3056,456,Quetta,Balochistan,South,Tier-2,30.1800000,66.9900000
+3057,457,KilaNau,Khyber Pakhtunkhwa,North,Tier-3,35.8281000,71.4929000
+3058,458,BastiChak,Sindh,South,Tier-3,26.9626000,68.0393000
+3059,459,BastiMor,Punjab,Central,Tier-3,31.7374000,72.7689000
+3060,460,ChakWala,Sindh,South,Tier-3,,68.3716000
+3061,461,DeraAbad,Unknown,South,Tier-3,30.5469000,66.5004000
+3062,462,NagarTando,Punjab,Central,Tier-3,30.1716000,74.9043000
+3063,463,PindLal,Punjab,Central,Tier-3,31.9363000,72.4240000
+3064,464,Jhelum,Punjab,Central,Tier-3,32.9300000,73.7300000
+3065,465,GarhKhan,Punjab,Central,Tier-3,32.1981000,
+3066,466,PurGulGul,Punjab,Central,Tier-3,29.6927000,72.6036000
+3067,467,SaraiGola,Punjab,Central,Tier-3,33.1091000,71.6769000
+3068,468,PurAbad,Balochistan,South,Tier-3,27.6514000,66.5727000
+3069,469,ThalKhan,Punjab,Central,Tier-3,31.1071000,72.6167000
+3070,470,AliGul,Punjab,Central,Tier-3,30.3463000,72.4733000
+3071,471,Mirpur Khas,Sindh,South,Tier-3,25.5300000,69.0100000
+3072,472,GarhLalThal,Sindh,South,Tier-3,25.8178000,67.8600000
+3073,473,RahKalan,Balochistan,South,Tier-3,28.5056000,65.4626000
+3074,474,KilaWala,Punjab,Central,Tier-3,31.2688000,74.2040000
+3075,475,GolaKhan,Punjab,Central,Tier-3,30.5772000,72.3511000
+3076,476,KotKalanDhok,Punjab,Central,Tier-3,31.3774000,72.7719000
+3077,477,NagarBastiGarh,Sindh,South,Tier-3,26.4333000,66.2340000
+3078,478,ShahMorBhal,Punjab,Central,Tier-3,32.9045000,70.3345000
+3079,479,ChakPind,Punjab,Central,Tier-3,31.6490000,72.1159000
+3080,480,GulLal,Punjab,Central,Tier-3,31.8069000,71.6122000
+3081,481,TandoChakJand,Punjab,Central,Tier-3,30.6306000,73.9350000
+3082,482,PindChakChak,Punjab,Central,Tier-3,31.1178000,73.2870000
+3083,483,MorAbad,Khyber Pakhtunkhwa,North,Tier-3,31.4629000,
+3084,484,AbadRahJand,Sindh,South,Tier-3,25.3795000,67.8487000
+3085,485,GarhDera,Sindh,South,Tier-3,26.4738000,70.5067000
+3086,486,ThalKhurdMari,Khyber Pakhtunkhwa,North,Tier-3,35.7028000,72.0295000
+3087,487,PindPurMor,Azad Kashmir,North,Tier-3,,74.3546000
+3088,488,GolaGarh,Khyber Pakhtunkhwa,North,Tier-3,33.7528000,73.7453000
+3089,489,WalaChakKhan,Punjab,Central,Tier-3,31.7124000,71.3692000
+3090,490,KotKhurdDera,Khyber Pakhtunkhwa,North,Tier-3,33.1225000,71.7733000
+3091,491,GarhThalGola,Khyber Pakhtunkhwa,North,Tier-3,33.1569000,70.8177000
+3092,492,TandoAbadKalan,Punjab,Central,Tier-3,30.3953000,73.1947000
+3093,493,TandoKalanChak,Punjab,Central,Tier-3,31.1402000,73.3955000
+3094,494,SaraiPur,Sindh,South,Tier-3,28.9853000,68.7030000
+3095,495,GulTandoDhok,Khyber Pakhtunkhwa,North,Tier-3,33.8726000,
+3096,496,AliKilaKalan,Gilgit-Baltistan,North,Tier-3,37.2503000,77.0330000
+3097,497,GolaNauDhok,Sindh,South,Tier-3,24.0515000,69.9174000
+3098,498,WalaLal,Unknown,Central,Tier-3,28.1139000,72.7854000
+3099,499,MariKhurdGarh,Khyber Pakhtunkhwa,North,Tier-3,32.8852000,71.8037000
+3100,500,JandGola,Khyber Pakhtunkhwa,North,Tier-3,34.7357000,70.8540000
+3101,501,NauAliGarh,Punjab,Central,Tier-3,33.3416000,73.1391000
+3102,502,KhurdChak,Khyber Pakhtunkhwa,North,Tier-3,34.1495000,71.7088000
+3103,503,Mianwali,Punjab,Central,Tier-3,32.5800000,71.5400000
+3104,504,GulKhurdAli,Punjab,Central,Tier-3,,73.0981000
+3105,505,DhokKotPur,Khyber Pakhtunkhwa,North,Tier-3,,
+3106,506,BhalKalan,Khyber Pakhtunkhwa,North,Tier-3,35.0583000,69.4164000
+3107,507,DeraKotThal,Sindh,South,Tier-3,24.0478000,66.8627000
+3108,508,WalaThal,Khyber Pakhtunkhwa,North,Tier-3,32.7525000,73.4346000
+3109,509,DhokMianDera,Punjab,Central,Tier-3,33.0104000,73.4383000
+3110,510,MariAbad,Unknown,North,Tier-3,34.7317000,72.7371000
+3111,511,DhokBhalMor,Sindh,South,Tier-3,27.2737000,68.0609000
+3112,512,DeraGolaGul,Balochistan,South,Tier-3,29.5466000,65.0387000
+3113,513,KhurdAliRah,Sindh,South,Tier-3,25.8398000,67.5714000
+3114,514,AliKotGul,Punjab,Central,Tier-3,29.5872000,70.7071000
+3115,515,AliNagarGola,Khyber Pakhtunkhwa,North,Tier-3,34.5640000,73.3821000
+3116,516,BastiLalGul,Khyber Pakhtunkhwa,North,Tier-3,35.3638000,
+3117,517,GarhPindAli,Punjab,Central,Tier-3,31.4089000,73.8227000
+3118,518,JandShahRah,Punjab,Central,Tier-3,30.7581000,74.0869000
+3119,519,AliKalan,Khyber Pakhtunkhwa,North,Tier-3,32.6104000,71.3886000
+3120,520,KhanGulNau,Sindh,South,Tier-3,27.6018000,69.3089000
+3121,521,DeraChak,Punjab,Central,Tier-3,31.2211000,73.2614000
+3122,522,SaraiMianKhan,Punjab,Central,Tier-3,30.1610000,73.1787000
+3123,523,RahWala,Khyber Pakhtunkhwa,North,Tier-3,33.6548000,71.6015000
+3124,524,NagarKot,Azad Kashmir,North,Tier-3,32.8101000,70.7480000
+3125,525,SaraiKalanBhal,Punjab,Central,Tier-3,,
+3126,526,PurBhal,Punjab,Central,Tier-3,30.2521000,73.4925000
+3127,527,LalTando,Khyber Pakhtunkhwa,North,Tier-3,32.5017000,69.7314000
+3128,528,ShahKhurdKila,Balochistan,South,Tier-3,29.4651000,65.8214000
+3129,529,RahDeraLal,Khyber Pakhtunkhwa,North,Tier-3,34.7286000,71.1556000
+3130,530,DhokWalaPind,Khyber Pakhtunkhwa,North,Tier-3,32.9266000,70.3908000
+3131,531,DhokChak,Punjab,Central,Tier-3,31.7657000,71.7054000
+3132,532,WalaDera,Punjab,Central,Tier-3,32.9727000,72.9429000
+3133,533,KhurdNagarAbad,Balochistan,South,Tier-3,28.5249000,64.7963000
+3134,534,LalKalan,Sindh,South,Tier-3,26.9243000,70.1498000
+3135,535,Faisalabad,Punjab,Central,Unknown,31.4200000,73.0800000
+3136,536,Sialkot,Punjab,Central,Tier-2,32.4900000,74.5300000
+3137,537,PindShah,Punjab,Central,Tier-3,30.9213000,72.7215000
+3138,538,AbadPurPur,Gilgit-Baltistan,North,Tier-3,37.1971000,75.9770000
+3139,539,RahBhal,Sindh,South,Tier-3,26.0091000,
+3140,540,SaraiDera,Sindh,South,Tier-3,23.3951000,66.9773000
+3141,541,PindSaraiKhan,Khyber Pakhtunkhwa,North,Tier-3,35.0503000,73.1753000
+3142,542,PindDera,Punjab,Central,Tier-3,32.1372000,73.1921000
+3143,543,Golasarai,Punjab,Central,Tier-3,31.0003000,72.8105000
+3144,544,GulShah,Punjab,Central,Tier-3,33.0408000,72.3769000
+3145,545,MianChakNagar,Punjab,Central,Tier-3,30.2885000,73.3253000
+3146,546,DhokNagarChak,Sindh,South,Tier-3,23.3071000,69.1729000
+3147,547,PurKalan,Unknown,North,Tier-3,35.4295000,71.2656000
+3148,548,Mardan,Khyber Pakhtunkhwa,North,Tier-2,34.2000000,72.0400000
+3149,549,KilaTandoDhok,Azad Kashmir,North,Tier-3,35.3920000,73.4959000
+3150,550,MianBasti,Sindh,South,Tier-3,25.0491000,67.4894000
+3151,551,DeraRah,Punjab,Central,Tier-3,31.8590000,72.4130000
+3152,552,NagarKhurdBasti,Sindh,South,Tier-3,27.2774000,
+3153,553,AliMianBhal,Punjab,Central,Tier-3,,75.0050000
+3154,554,MariBhalBasti,Punjab,Central,Tier-3,31.7865000,73.5906000
+3155,555,MianShahRah,Punjab,Central,Tier-3,29.6338000,69.9157000
+3156,556,PurJand,Punjab,Central,Tier-3,29.7165000,72.7325000
+3157,557,DeraBasti,Unknown,South,Tier-3,27.6497000,65.1887000
+3158,558,SaraiMor,Punjab,Central,Tier-3,30.4805000,71.9798000
+3159,559,BhalBasti,Gilgit-Baltistan,North,Tier-3,35.5052000,76.2217000
+3160,560,BastiKalan,Sindh,South,Tier-3,25.3559000,65.7965000
+3161,561,KhanShahAli,Sindh,South,Tier-3,26.0437000,68.7223000
+3162,562,JandDhok,Punjab,Central,Tier-3,30.1259000,
+3163,563,AliDeraLal,Sindh,South,Tier-3,,
+3164,564,GarhAbad,Sindh,South,Tier-3,24.7648000,68.6277000
+3165,565,DhokPur,Sindh,South,Tier-3,26.5617000,68.4646000
+3166,566,KalanGul,Balochistan,South,Tier-3,27.6417000,66.2334000
+3167,567,PurKilaBasti,Punjab,Central,Tier-3,30.1998000,72.0774000
+3168,568,TandoNauLal,Khyber Pakhtunkhwa,North,Tier-3,34.5257000,70.7511000
+3169,569,PurKhan,Punjab,Central,Tier-3,28.1264000,73.2401000
+3170,570,Larkana,Sindh,South,Tier-3,27.5600000,68.2100000
+3171,571,KotKhan,Balochistan,South,Tier-3,27.9962000,65.2360000
+3172,572,Okara,Punjab,Central,Tier-3,30.8100000,73.4500000
+3173,573,MariPindKalan,Balochistan,South,Tier-3,,
+3174,574,GulNagarTando,Punjab,Central,Tier-3,31.2758000,74.5864000
+3175,575,JandPurMor,Khyber Pakhtunkhwa,North,Tier-3,32.9045000,73.4519000
+3176,576,GolaPind,Sindh,South,Tier-3,27.6975000,67.4169000
+3177,577,NauBasti,Balochistan,South,Tier-3,28.8792000,69.3835000
+3178,578,AliJandKalan,Punjab,Central,Tier-3,29.4809000,71.4756000
+3179,579,AbadBastiGola,Gilgit-Baltistan,North,Tier-3,35.3686000,76.0263000
+3180,580,GarhMianMari,Punjab,Central,Tier-3,31.2586000,76.4606000
+3181,581,PurPurThal,Unknown,South,Tier-3,30.9279000,65.0814000
+3182,582,BastiNagarTando,Punjab,Central,Tier-3,32.7443000,72.6871000
+3183,583,GulAbadAli,Sindh,South,Tier-3,24.3047000,68.5176000
+3184,584,SaraiGarhGarh,Sindh,South,Tier-3,26.1534000,69.7035000
+3185,585,KotLal,Sindh,South,Tier-3,26.6642000,
+3186,586,KhanDhokPind,Sindh,South,Tier-3,26.4529000,
+3187,587,PurKhurdBhal,Punjab,Central,Tier-3,30.4730000,73.7388000
+3188,588,MariChakWala,Punjab,Central,Tier-3,33.1801000,73.1217000
+3189,589,NauNauLal,Sindh,South,Tier-3,27.4322000,67.3611000
+3190,590,KilaKilaPind,Sindh,South,Tier-3,28.5207000,69.6913000
+3191,591,KhanKila,Punjab,Central,Tier-3,30.5333000,71.7175000
+3192,592,KalanKhurdKhan,Punjab,Central,Tier-3,30.6977000,71.3503000
+3193,593,SaraiSaraiRah,Sindh,South,Tier-3,24.9413000,70.0414000
+3194,594,GulKilaPind,Sindh,South,Tier-3,26.7422000,68.4339000
+3195,595,ChakGola,Punjab,Central,Tier-3,31.1674000,74.8972000
+3196,596,ChakMianShah,Sindh,South,Tier-3,27.4758000,71.5149000
+3197,597,Gujranwala,Punjab,Central,Tier-2,32.1600000,74.1900000
+3198,598,NauNagarKot,Balochistan,South,Tier-3,28.8037000,65.7037000
+3199,599,GarhKilaDhok,Punjab,Central,Tier-3,30.4001000,71.3237000
+3200,600,ThalGola,Punjab,Central,Tier-3,29.8272000,74.6179000
+3201,601,Multan,Punjab,Central,Tier-2,30.1600000,71.5200000
+3202,602,LalWalaNagar,Khyber Pakhtunkhwa,North,Tier-3,33.7870000,71.2279000
+3203,603,MorRahKhan,Punjab,Central,Tier-3,31.9491000,72.0524000
+3204,604,ChakSaraiDhok,Gilgit-Baltistan,North,Tier-3,,74.9751000
+3205,605,ShahAli,Khyber Pakhtunkhwa,North,Tier-3,,
+3206,606,NauWala,Balochistan,South,Tier-3,28.5777000,64.7066000
+3207,607,RahKhurdJand,Sindh,South,Tier-3,25.8081000,67.3935000
+3208,608,MianNau,Punjab,Central,Tier-3,32.5302000,74.8505000
+3209,609,TandoWala,Sindh,South,Tier-3,24.1724000,69.4293000
+3210,610,GulGarhDhok,Punjab,Central,Tier-3,29.7719000,72.4920000
+3211,611,TandoMian,Khyber Pakhtunkhwa,North,Tier-3,34.0344000,72.3703000
+3212,612,ThalPindGarh,Khyber Pakhtunkhwa,North,Tier-3,35.1753000,70.5555000
+3213,613,TandoGul,Azad Kashmir,North,Tier-3,36.1120000,72.0422000
+3214,614,Karachi,Sindh,South,Unknown,24.8600000,67.0100000
+3215,615,PindThalJand,Punjab,Central,Tier-3,29.4421000,72.3572000
+3216,616,NauPind,Punjab,Central,Tier-3,31.0512000,73.3320000
+3217,617,Dera Ghazi Khan,Punjab,Central,Tier-3,30.0500000,70.6400000
+3218,618,DeraJand,Punjab,Central,Tier-3,,72.8660000
+3219,619,WalaWalaTando,Sindh,South,Tier-3,25.4694000,69.6541000
+3220,620,GulGola,Punjab,Central,Tier-3,30.7013000,72.9261000
+3221,621,JandBasti,Punjab,Central,Tier-3,30.8403000,75.3432000
+3222,622,KalanKotKhurd,Khyber Pakhtunkhwa,North,Tier-3,34.4742000,70.6874000
+3223,623,PurMian,Sindh,South,Tier-3,29.4017000,69.6277000
+3224,624,NagarSaraiWala,Punjab,Central,Tier-3,30.8689000,73.4224000
+3225,625,JandKhan,Sindh,South,Tier-3,26.4039000,66.5250000
+3226,626,DhokKalan,Balochistan,South,Tier-3,,65.2328000
+3227,627,DeraDera,Punjab,Central,Tier-3,34.7572000,74.6650000
+3228,628,AbadKhanKhan,Khyber Pakhtunkhwa,North,Tier-3,34.0827000,71.8466000
+3229,629,GulGolaKhurd,Punjab,Central,Tier-3,30.4428000,72.9688000
+3230,630,NagarPurMari,Punjab,Central,Tier-3,30.9181000,74.0109000
+3231,631,NauKotRah,Punjab,Central,Tier-3,32.1983000,72.2513000
+3232,632,PindMorPur,Punjab,Central,Tier-3,32.5747000,73.5063000
+3233,633,KhurdPur,Balochistan,South,Tier-3,27.8065000,65.7736000
+3234,634,AliRahDhok,Gilgit-Baltistan,North,Tier-3,34.5146000,75.6630000
+3235,635,AbadShahGul,Sindh,South,Tier-3,24.9857000,67.5613000
+3236,636,PurMariMor,Punjab,Central,Tier-3,29.5938000,73.1604000
+3237,637,KilaSarai,Punjab,Central,Tier-3,30.0170000,72.9076000
+3238,638,GarhKila,Khyber Pakhtunkhwa,North,Tier-3,33.0713000,72.9356000
+3239,639,Thatta,Sindh,South,Tier-3,24.7500000,67.9200000
+3240,640,KhurdBastiGola,Gilgit-Baltistan,North,Tier-3,35.6140000,75.1837000
+3241,641,Mansehra,Khyber Pakhtunkhwa,North,Tier-3,34.3300000,73.2000000
+3242,642,WalaKila,Punjab,Central,Tier-3,30.2839000,72.6388000
+3243,643,Nawabshah,Sindh,South,Tier-3,26.2500000,68.4100000
+3244,644,NagarTandoRah,Sindh,South,Tier-3,26.2881000,68.6657000
+3245,645,RahDera,Sindh,South,Tier-3,26.2190000,69.3033000
+3246,646,AliKilaGul,Punjab,Central,Tier-3,32.3267000,72.5229000
+3247,647,DeraAli,Punjab,Central,Tier-3,31.9504000,72.2453000
+3248,648,GarhDhok,Khyber Pakhtunkhwa,North,Tier-3,34.9987000,71.7371000
+3249,649,WalaNagar,Sindh,South,Tier-3,27.5591000,68.1782000
+3250,650,MianKilaThal,Punjab,Central,Tier-3,30.7896000,72.9540000
