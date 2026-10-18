@@ -362,8 +362,8 @@ Interactivity: slicers (date, category, region, seller tier, customer segment), 
 | 2 | Database schema and SQL scripts | `include/sql/` |
 | 3 | Star schema diagram | 'docs/star_schema.png'|
 | 4 | Power BI dashboard (.pbix) | '/powerbi/nexusmart.pbix' |
-| 5 | Dashboard PDF export | (`powerbi/Nexus Mart.pbix`) |
-| 6 | Executive Summary (2-3 page PDF) | (`docs/documentation`) |
+| 5 | Dashboard PDF export | (`powerbi/Nexus Mart.pbix`) (docs/audit_report.pdf) |
+| 6 | Executive Summary (2-3 page PDF) | (`docs/brief_documentation`) |
 | 7 | Source code | this repository |
 | 8 | README | this file |
 | 9 | Data Quality Report | Counts in [Data Cleaning Rules](#data-cleaning-rules); profiling outputs in `docs/dq_*.csv`; consolidated report pending |
